@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://f6mga8odsmb1"]
+
+[ext_resource type="PackedScene" uid="uid://b36vhhh4gtf0t" path="res://Prototype/Components/attribute.tscn" id="1_gxbh7"]
+[ext_resource type="PackedScene" uid="uid://bytp1jf0daift" path="res://Prototype/Components/hero.tscn" id="2_vo8sw"]
+
+[node name="Prototype" type="Node"]
+
+[node name="Attributes" type="Node" parent="."]
+
+[node name="Hair" parent="Attributes" groups=["attributes"] instance=ExtResource("1_gxbh7")]
+_values = Array[String](["Black", "Blonde", "Gray"])
+
+[node name="Cape" parent="Attributes" groups=["attributes"] instance=ExtResource("1_gxbh7")]
+_values = Array[String](["Blue", "Thin", "Long"])
+
+[node name="Mask" parent="Attributes" groups=["attributes"] instance=ExtResource("1_gxbh7")]
+_values = Array[String](["Scary", "Dark", "Red"])
+
+[node name="Pet" parent="Attributes" groups=["attributes"] instance=ExtResource("1_gxbh7")]
+_values = Array[String](["Cow", "Raccoon", "Chicken", "Cat"])
+
+[node name="Eyes" parent="Attributes" groups=["attributes"] instance=ExtResource("1_gxbh7")]
+_values = Array[String](["Blue", "Brown"])
+
+[node name="Heroes" type="Node" parent="."]
+
+[node name="Hero" parent="Heroes" groups=["heroes"] instance=ExtResource("2_vo8sw")]
+_description = Dictionary[String, Array]({
+"Cape": ["Thin"],
+"Eyes": ["Brown"],
+"Hair": ["Black"],
+"Mask": ["Scary"],
+"Pet": ["Cow"]
+})
+
+[node name="Hero2" parent="Heroes" groups=["heroes"] instance=ExtResource("2_vo8sw")]
+_description = Dictionary[String, Array]({
+"Cape": ["Blue"],
+"Eyes": ["Blue"],
+"Hair": ["Blond"],
+"Mask": ["Dark"],
+"Pet": ["Cow"]
+})
+
+[node name="Hero3" parent="Heroes" groups=["heroes"] instance=ExtResource("2_vo8sw")]
+_description = Dictionary[String, Array]({
+"Cape": ["Long"],
+"Eyes": ["Blue"],
+"Hair": ["Gray"],
+"Mask": ["Red"],
+"Pet": ["Cow"]
+})

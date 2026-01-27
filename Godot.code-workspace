@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "a_hero_stole_my_wallet"
+		}
+	],
+	"settings": {
+		"godotTools.editorPath.godot4": "d:\\Godot\\Godot_v4.5.1-stable_mono_win64\\Godot_v4.5.1-stable_mono_win64.exe",
+		"editor.rulers": [
+			100
+		],
+		"chat.disableAIFeatures": true,
+		"godotTools.inlayHints.gdscript": true
+	}
+}
