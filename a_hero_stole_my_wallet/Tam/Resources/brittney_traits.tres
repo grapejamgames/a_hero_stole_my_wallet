@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WitnessTraits" load_steps=3 format=3 uid="uid://dhobln85rgj2f"]
+
+[ext_resource type="Texture2D" uid="uid://daw7wfxm7sycg" path="res://Art/brittney.png" id="1_orvvt"]
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://Scripts/witness_traits.gd" id="2_ku0ub"]
+
+[resource]
+script = ExtResource("2_ku0ub")
+name = "Brittney"
+picture = ExtResource("1_orvvt")
+hair_color = 1
+makeup = true
+facial_accessory = 2
+costume_color = 2
+cape = 1
+pet = 2
+metadata/_custom_type_script = "uid://lmu125hxdee"

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://4tbqtfk7rscl"]
+
+[ext_resource type="Script" uid="uid://cbgm3d4weqdf4" path="res://Scripts/witness.gd" id="1_lamuh"]
+
+[node name="Witness" type="Node2D"]
+script = ExtResource("1_lamuh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

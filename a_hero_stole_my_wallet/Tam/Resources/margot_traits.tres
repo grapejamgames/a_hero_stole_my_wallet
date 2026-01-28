@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WitnessTraits" load_steps=3 format=3 uid="uid://cn4mkqulcfa0s"]
+
+[ext_resource type="Texture2D" uid="uid://bwtve40ea8luf" path="res://Art/margot.png" id="1_5c42n"]
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://Scripts/witness_traits.gd" id="1_c5t8f"]
+
+[resource]
+script = ExtResource("1_c5t8f")
+name = "Margot"
+picture = ExtResource("1_5c42n")
+facial_accessory = 1
+cape = 2
+pet = 1
+metadata/_custom_type_script = "uid://lmu125hxdee"
