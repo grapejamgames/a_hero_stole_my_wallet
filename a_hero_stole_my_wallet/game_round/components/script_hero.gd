@@ -23,15 +23,25 @@ func _ready() -> void:
 		return
 
 	description_to_lowercase()
-	remove_empty_attributes()
-	populate_attributes()
+	populate_my_nouns()
 	remove_extra_attributes()
+	populate_adjectives()
 
 	if _description.is_empty():
 		print(name, " has no description")
 		for group in get_groups():
 			remove_from_group(group)
 		return
+
+
+func populate_adjectives() -> void:
+	# Add these adjectives to the attributes
+	for noun in _description.keys():
+		var adjectives = _description[noun]
+		var existing_adjectives = all_attributes[noun].get_adjectives()
+		for adjective in adjectives:
+			if not existing_adjectives.has(adjective):
+				existing_adjectives.push_back(adjective)
 
 
 # Ensure keys and values are lowercase to avoid errors.
@@ -74,8 +84,8 @@ func get_random_adjective(noun : String) -> String:
 	return _description[noun][rand_int]
 
 
-# Add all attribute nouns to this character but don't populate the adjective
-func populate_attributes() -> void:
+# Add all attribute nouns to this character
+func populate_my_nouns() -> void:
 	var empty_description : Dictionary[String, Array]
 	for noun in all_attributes.keys():
 		var empty_array : Array[String] = []
@@ -97,8 +107,7 @@ func remove_empty_attributes() -> void:
 
 func get_all_attributes() -> void:
 	for attribute in get_tree().get_nodes_in_group("attributes"):
-		if attribute.is_valid:
-			all_attributes[attribute.get_noun()] = attribute
+		all_attributes[attribute.get_noun()] = attribute
 
 
 # Get a statement about this hero

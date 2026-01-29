@@ -21,6 +21,7 @@ func _ready() -> void:
 		print("No heroes found")
 		return
 
+	get_tree().call_group("attributes", "validate")
 	attributes = get_tree().get_nodes_in_group("attributes")
 	if attributes.is_empty():
 		print("No attributes found")
