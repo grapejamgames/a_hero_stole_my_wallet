@@ -30,18 +30,14 @@ var adlibs : Array[String]
 var is_valid : bool = true
 
 
-func _init(noun : String = "", adjectives = null) -> void:
+func _init(noun : String = "", adjectives = null, singular : bool = true) -> void:
 	_noun = noun.to_lower()
+	_singular = singular
 	match typeof(adjectives):
 		TYPE_STRING:
 			add_adjective(adjectives)
 		TYPE_ARRAY:
 			add_adjectives(adjectives)
-	
-	if _singular:
-		adlibs = adlibs_singular
-	else:
-		adlibs = adlibs_plural
 
 
 func _ready() -> void:
@@ -59,6 +55,11 @@ func _ready() -> void:
 		remove_from_group("attributes")
 		is_valid = false
 		return
+
+	if _singular:
+		adlibs = adlibs_singular
+	else:
+		adlibs = adlibs_plural
 
 	adjectives_to_lower()
 
@@ -97,8 +98,7 @@ func get_random_statement(adjective : String, fact : bool) -> String:
 		adjective = get_different_adjective(adjective)
 	var rand_int : int = rand_num.randi_range(0, adlibs.size() - 1)
 	var random_adlib : String = adlibs[rand_int]
-	var statement = random_adlib.format({_noun : adjective})
-	print(statement)
+	var statement = random_adlib.format({"noun" : _noun, "adjective" : adjective})
 	return statement
 
 

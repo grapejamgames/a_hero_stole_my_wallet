@@ -3,7 +3,6 @@ class_name Hero
 
 extends Node
 
-@export var _full_name : String
 @export var _description : Dictionary[String, Array]
 
 var my_statement : String
@@ -11,8 +10,7 @@ var all_attributes : Dictionary[String, Node]  # All attributes
 var rand_num = RandomNumberGenerator.new()
 
 
-func _init(full_name : String = "", description = null) -> void:
-	_full_name = full_name
+func _init(description = null) -> void:
 	match typeof(description):
 		TYPE_DICTIONARY:
 			add_description(description)
@@ -21,20 +19,30 @@ func _init(full_name : String = "", description = null) -> void:
 func _ready() -> void:
 	get_all_attributes()
 	if all_attributes.is_empty():
-		print("There are no attributes for this round")
+		print(name, " couldn't find any attributes")
 		return
 
+	description_to_lowercase()
+	remove_empty_attributes()
 	populate_attributes()
+	remove_extra_attributes()
+
+	if _description.is_empty():
+		print(name, " has no description")
+		for group in get_groups():
+			remove_from_group(group)
+		return
 
 
-func description_to_lower() -> void:
+# Ensure keys and values are lowercase to avoid errors.
+func description_to_lowercase() -> void:
 	var lower_description : Dictionary[String, Array]
 	for key in _description.keys():
 		# lowercase the values
 		for i in range(_description[key].size()):
 			_description[key][i] = _description[key][i].to_lower()
 		# lowercase the key
-		lower_description[key.lower] = _description[key]	
+		lower_description[key.to_lower()] = _description[key]	
 	_description = lower_description
 
 
@@ -55,10 +63,11 @@ func get_random_noun() -> String:
 		return ""
 	var rand_int = rand_num.randi_range(0, _description.size() - 1)
 	return _description.keys()[rand_int].to_lower()
-	
 
 
 func get_random_adjective(noun : String) -> String:
+	if not _description[noun]:
+		return ""
 	if _description[noun].is_empty():
 		return ""
 	var rand_int = rand_num.randi_range(0, _description[noun].size() - 1)
@@ -72,6 +81,18 @@ func populate_attributes() -> void:
 		var empty_array : Array[String] = []
 		empty_description[noun] = empty_array
 	_description.merge(empty_description)
+
+
+func remove_extra_attributes() -> void:
+	for key in _description.keys():
+		if not all_attributes.has(key):
+			_description.erase(key)
+
+
+func remove_empty_attributes() -> void:
+	for key in _description.keys():
+		if _description[key].is_empty():
+			_description.erase(key)
 
 
 func get_all_attributes() -> void:
