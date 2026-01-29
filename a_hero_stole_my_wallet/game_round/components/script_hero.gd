@@ -5,7 +5,6 @@ extends Node
 
 @export var _full_name : String
 @export var _description : Dictionary[String, Array]
-@export var auto_populate : bool = true
 
 var attributes : Array[Node]
 var rand_num = RandomNumberGenerator.new()
@@ -19,8 +18,9 @@ func _init(full_name : String = "", description = null) -> void:
 
 
 func _ready() -> void:
-	if auto_populate:
-		populate_attributes()
+	attributes = get_tree().get_nodes_in_group("attributes")
+
+	populate_attributes()
 
 
 func add_description(description : Dictionary) -> void:
@@ -51,10 +51,11 @@ func get_random_adjective(noun : String) -> String:
 
 # Add all attribute nouns to this character but don't populate the adjective
 func populate_attributes() -> void:
-	attributes = get_tree().get_nodes_in_group("attributes")
+	var empty_description : Dictionary[String, Array]
 	for attribute in attributes:
 		var empty_array : Array[String] = []
-		_description[attribute.noun] = empty_array
+		empty_description[attribute.noun] = empty_array
+	_description.merge(empty_description)
 
 
 # TODO : Attribute validator
