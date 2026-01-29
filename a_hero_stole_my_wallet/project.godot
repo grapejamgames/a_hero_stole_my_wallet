@@ -24,6 +24,7 @@ project/assembly_name="A Hero Stole My Wallet"
 
 attributes=""
 heroes=""
+not_guilty=""
 
 [rendering]
 

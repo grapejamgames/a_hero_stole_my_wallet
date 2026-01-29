@@ -6,7 +6,8 @@ extends Node
 @export var _full_name : String
 @export var _description : Dictionary[String, Array]
 
-var attributes : Array[Node]
+var my_statement : String
+var all_attributes : Dictionary[String, Node]  # All attributes
 var rand_num = RandomNumberGenerator.new()
 
 
@@ -18,9 +19,23 @@ func _init(full_name : String = "", description = null) -> void:
 
 
 func _ready() -> void:
-	attributes = get_tree().get_nodes_in_group("attributes")
+	get_all_attributes()
+	if all_attributes.is_empty():
+		print("There are no attributes for this round")
+		return
 
 	populate_attributes()
+
+
+func description_to_lower() -> void:
+	var lower_description : Dictionary[String, Array]
+	for key in _description.keys():
+		# lowercase the values
+		for i in range(_description[key].size()):
+			_description[key][i] = _description[key][i].to_lower()
+		# lowercase the key
+		lower_description[key.lower] = _description[key]	
+	_description = lower_description
 
 
 func add_description(description : Dictionary) -> void:
@@ -36,26 +51,43 @@ func get_attributes() -> Array:
 
 
 func get_random_noun() -> String:
-	if _description:
-		var rand_int = rand_num.randi_range(0, _description.size() - 1)
-		return _description.keys()[rand_int]
-	return ""
+	if _description.is_empty():
+		return ""
+	var rand_int = rand_num.randi_range(0, _description.size() - 1)
+	return _description.keys()[rand_int].to_lower()
+	
 
 
 func get_random_adjective(noun : String) -> String:
-	if _description:
-		var rand_int = rand_num.randi_range(0, _description.size() - 1)
-		return _description[noun][rand_int]
-	return ""
+	if _description[noun].is_empty():
+		return ""
+	var rand_int = rand_num.randi_range(0, _description[noun].size() - 1)
+	return _description[noun][rand_int]
 
 
 # Add all attribute nouns to this character but don't populate the adjective
 func populate_attributes() -> void:
 	var empty_description : Dictionary[String, Array]
-	for attribute in attributes:
+	for noun in all_attributes.keys():
 		var empty_array : Array[String] = []
-		empty_description[attribute.noun] = empty_array
+		empty_description[noun] = empty_array
 	_description.merge(empty_description)
+
+
+func get_all_attributes() -> void:
+	for attribute in get_tree().get_nodes_in_group("attributes"):
+		if attribute.is_valid:
+			all_attributes[attribute.get_noun()] = attribute
+
+
+# Get a statement about this hero
+func get_statement_about_me(fact : bool) -> String:
+	var noun : String = get_random_noun()
+	var adjective : String = get_random_adjective(noun)
+	var statement : String = ""
+	if noun and adjective: 
+		statement = all_attributes[noun].get_random_statement(adjective, fact)
+	return statement
 
 
 # TODO : Attribute validator
