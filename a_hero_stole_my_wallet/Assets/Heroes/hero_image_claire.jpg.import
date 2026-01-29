@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnuhk6olp7nmx"
-path="res://.godot/imported/angela_thumbnail.png-b8887c5da3eb0d25ee1dfb9b42b85699.ctex"
+uid="uid://bplgu4knituan"
+path="res://.godot/imported/hero_image_claire.jpg-f8c3154b6305ccc834a04611baa6c183.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Heroes/angela_thumbnail.png"
-dest_files=["res://.godot/imported/angela_thumbnail.png-b8887c5da3eb0d25ee1dfb9b42b85699.ctex"]
+source_file="res://Assets/Heroes/hero_image_claire.jpg"
+dest_files=["res://.godot/imported/hero_image_claire.jpg-f8c3154b6305ccc834a04611baa6c183.ctex"]
 
 [params]
 

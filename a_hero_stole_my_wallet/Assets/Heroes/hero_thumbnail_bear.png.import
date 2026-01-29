@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6evitjyxkbp6"
-path="res://.godot/imported/chad_thumbnail.png-04b947857f4fe96165844fc77d009a61.ctex"
+uid="uid://bn1eeeeqqcr6r"
+path="res://.godot/imported/hero_thumbnail_bear.png-64065e3a6a828a091d9e84db0912b037.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Heroes/chad_thumbnail.png"
-dest_files=["res://.godot/imported/chad_thumbnail.png-04b947857f4fe96165844fc77d009a61.ctex"]
+source_file="res://Assets/Heroes/hero_thumbnail_bear.png"
+dest_files=["res://.godot/imported/hero_thumbnail_bear.png-64065e3a6a828a091d9e84db0912b037.ctex"]
 
 [params]
 

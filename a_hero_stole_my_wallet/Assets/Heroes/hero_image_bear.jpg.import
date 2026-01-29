@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpwyth2m0aupp"
-path="res://.godot/imported/claire.jpg-6dec8ef9c03017c2f5db00a6af853ea2.ctex"
+uid="uid://64d2vic4jirx"
+path="res://.godot/imported/hero_image_bear.jpg-93f088e20a631eaf9983b58520dde0d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Heroes/claire.jpg"
-dest_files=["res://.godot/imported/claire.jpg-6dec8ef9c03017c2f5db00a6af853ea2.ctex"]
+source_file="res://Assets/Heroes/hero_image_bear.jpg"
+dest_files=["res://.godot/imported/hero_image_bear.jpg-93f088e20a631eaf9983b58520dde0d4.ctex"]
 
 [params]
 

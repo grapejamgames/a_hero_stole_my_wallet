@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://i4lh0vfbtnqq"
-path="res://.godot/imported/philip_thumbnail.png-ec3fc14d9197b62c09ceae3c122e766a.ctex"
+uid="uid://c5hlxerwwb4jx"
+path="res://.godot/imported/hero_image_chad.jpg-1f9531cf8b42918cf80d3f4b8c95bd54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Heroes/philip_thumbnail.png"
-dest_files=["res://.godot/imported/philip_thumbnail.png-ec3fc14d9197b62c09ceae3c122e766a.ctex"]
+source_file="res://Assets/Heroes/hero_image_chad.jpg"
+dest_files=["res://.godot/imported/hero_image_chad.jpg-1f9531cf8b42918cf80d3f4b8c95bd54.ctex"]
 
 [params]
 

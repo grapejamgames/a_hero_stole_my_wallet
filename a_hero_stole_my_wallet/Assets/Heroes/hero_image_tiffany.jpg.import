@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfl68le0wm6rr"
-path="res://.godot/imported/tiffany_thumbnail.png-a0ac30bf01f6973a5f073f8e7c2a4d1e.ctex"
+uid="uid://clw3lh5obxx1o"
+path="res://.godot/imported/hero_image_tiffany.jpg-77f7d02386264928e2f48571a36b3634.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Heroes/tiffany_thumbnail.png"
-dest_files=["res://.godot/imported/tiffany_thumbnail.png-a0ac30bf01f6973a5f073f8e7c2a4d1e.ctex"]
+source_file="res://Assets/Heroes/hero_image_tiffany.jpg"
+dest_files=["res://.godot/imported/hero_image_tiffany.jpg-77f7d02386264928e2f48571a36b3634.ctex"]
 
 [params]
 

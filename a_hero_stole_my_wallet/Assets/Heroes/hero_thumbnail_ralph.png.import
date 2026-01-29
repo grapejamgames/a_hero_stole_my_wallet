@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2wlxosm00co2"
-path="res://.godot/imported/bear_thumbnail.png-df62bc8ca9327fa926cbf84d794cf96a.ctex"
+uid="uid://dqsi12lv7bf5o"
+path="res://.godot/imported/hero_thumbnail_ralph.png-be6c35281122ff87754976595a219c1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Heroes/bear_thumbnail.png"
-dest_files=["res://.godot/imported/bear_thumbnail.png-df62bc8ca9327fa926cbf84d794cf96a.ctex"]
+source_file="res://Assets/Heroes/hero_thumbnail_ralph.png"
+dest_files=["res://.godot/imported/hero_thumbnail_ralph.png-be6c35281122ff87754976595a219c1d.ctex"]
 
 [params]
 

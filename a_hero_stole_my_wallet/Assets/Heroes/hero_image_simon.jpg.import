@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpbiatbvx5jnj"
-path="res://.godot/imported/owen.jpg-83e71c8cf20032cdced08b6c238282a3.ctex"
+uid="uid://b1r261rxwlw2d"
+path="res://.godot/imported/hero_image_simon.jpg-1eb31718f7db62adcb8bd9b5f565bfdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Heroes/owen.jpg"
-dest_files=["res://.godot/imported/owen.jpg-83e71c8cf20032cdced08b6c238282a3.ctex"]
+source_file="res://Assets/Heroes/hero_image_simon.jpg"
+dest_files=["res://.godot/imported/hero_image_simon.jpg-1eb31718f7db62adcb8bd9b5f565bfdb.ctex"]
 
 [params]
 

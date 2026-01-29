@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp5rqfq6mssa8"
-path="res://.godot/imported/brittney.jpg-b9b1138009ab57a7bc4f12327f110954.ctex"
+uid="uid://c75d6txi2lf3v"
+path="res://.godot/imported/hero_thumbnail_simon.png-e2386c0c5f119af3cdf25b4d94bf0b39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Heroes/brittney.jpg"
-dest_files=["res://.godot/imported/brittney.jpg-b9b1138009ab57a7bc4f12327f110954.ctex"]
+source_file="res://Assets/Heroes/hero_thumbnail_simon.png"
+dest_files=["res://.godot/imported/hero_thumbnail_simon.png-e2386c0c5f119af3cdf25b4d94bf0b39.ctex"]
 
 [params]
 

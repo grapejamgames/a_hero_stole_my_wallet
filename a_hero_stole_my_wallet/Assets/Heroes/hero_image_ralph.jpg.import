@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4i6qppo3ndbq"
-path="res://.godot/imported/sophia_thumbnail.png-03f3f097b2b93a0bff1da6515cd85a12.ctex"
+uid="uid://r6dvoauyqmid"
+path="res://.godot/imported/hero_image_ralph.jpg-442c68eeeabf79936287dfec7ad05aac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Heroes/sophia_thumbnail.png"
-dest_files=["res://.godot/imported/sophia_thumbnail.png-03f3f097b2b93a0bff1da6515cd85a12.ctex"]
+source_file="res://Assets/Heroes/hero_image_ralph.jpg"
+dest_files=["res://.godot/imported/hero_image_ralph.jpg-442c68eeeabf79936287dfec7ad05aac.ctex"]
 
 [params]
 
