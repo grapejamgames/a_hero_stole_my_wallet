@@ -35,18 +35,17 @@ func get_attributes() -> Array:
 	return _description.keys()
 
 
-func get_random_attribute() -> String:
-	var rand_int = rand_num.randi_range(0, _description.size() - 1)
-	return _description.values()[rand_int]
+func get_random_noun() -> String:
+	if _description:
+		var rand_int = rand_num.randi_range(0, _description.size() - 1)
+		return _description.keys()[rand_int]
+	return ""
 
-
-func get_random_attribute_value(attribute : String) -> String:
-	var rand_int = rand_num.randi_range(0, _description[attribute].size() - 1)
-	return _description[attribute][rand_int]
-
-
-func attribute_count() -> int:
-	return _description.size()
+func get_random_adjective(noun : String) -> String:
+	if _description:
+		var rand_int = rand_num.randi_range(0, _description.size() - 1)
+		return _description[noun][rand_int]
+	return ""
 
 
 func populate_attributes() -> void:
