@@ -33,6 +33,7 @@ var adlibs : Array[String]
 
 func _init(noun : String = "", adjectives = null) -> void:
 	_noun = noun
+	name = noun
 	match typeof(adjectives):
 		TYPE_STRING:
 			add_adjective(adjectives)

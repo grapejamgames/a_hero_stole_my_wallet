@@ -41,6 +41,7 @@ func get_random_noun() -> String:
 		return _description.keys()[rand_int]
 	return ""
 
+
 func get_random_adjective(noun : String) -> String:
 	if _description:
 		var rand_int = rand_num.randi_range(0, _description.size() - 1)
@@ -48,11 +49,12 @@ func get_random_adjective(noun : String) -> String:
 	return ""
 
 
+# Add all attribute nouns to this character but don't populate the adjective
 func populate_attributes() -> void:
 	attributes = get_tree().get_nodes_in_group("attributes")
 	for attribute in attributes:
-		var array : Array[String] = []
-		_description[attribute.name] = array
+		var empty_array : Array[String] = []
+		_description[attribute.noun] = empty_array
 
 
 # TODO : Attribute validator
