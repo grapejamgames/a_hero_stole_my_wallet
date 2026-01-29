@@ -3,10 +3,11 @@ extends Node
 #TODO
 #
 # Pick a board size (n).
+# Choose a guilty hero
 # Generate n-1 attribute statements with culprit's values
 # Repeates are ok - or convert repeates to "I didn't see anyting"
-# Assign one statement to each of the the non-guilty heroes
-# Generate 1 attribute statement using anyone's values
+# Assign one statement to each of the the non-guilty heroes - give "clue" cards to each hero
+# Generate 1 attribute statement using anyone's values - (make up a lie)
 # Assign this to the guilty hero
 
 
