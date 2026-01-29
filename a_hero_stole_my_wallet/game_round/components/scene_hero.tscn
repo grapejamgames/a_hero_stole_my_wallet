@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bytp1jf0daift"]
 
-[ext_resource type="Script" uid="uid://d2147istdhnpk" path="res://Prototype/Components/hero.gd" id="1_780bu"]
+[ext_resource type="Script" uid="uid://d2147istdhnpk" path="res://game_round/components/script_hero.gd" id="1_780bu"]
 
 [node name="Hero" type="Node"]
 script = ExtResource("1_780bu")
