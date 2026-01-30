@@ -36,7 +36,7 @@ func _ready() -> void:
 		# Todo check for dupes
 		hero.my_statement = guilty_hero.get_statement_about_me(true)
 	
-	#console_output()
+	console_output()
 
 
 func choose_guilty_hero(heroes : Array[Node]) -> Node:

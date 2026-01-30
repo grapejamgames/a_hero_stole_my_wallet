@@ -7,7 +7,7 @@ signal show_grid
 
 
 func _on_hero_headshot_examine_polaroid(name_string: String, picture: Texture, statement: String) -> void:
-	print("updating polaroid")
+	#print("updating polaroid")
 	hero_name.text = name_string
 	texture_rect.texture = picture
 	hero_statement.text = statement

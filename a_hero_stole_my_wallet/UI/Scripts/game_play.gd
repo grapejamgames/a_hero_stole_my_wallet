@@ -14,12 +14,12 @@ func _process(_delta: float) -> void:
 
 
 func _on_hero_headshot_hide_grid() -> void:
-	print("gameplay control at work")
+	#print("gameplay control at work")
 	center_container.hide()
 	center_container_2.show()
 
 
 func _on_examine_polaroid_show_grid() -> void:
-	print("gameplay control at work")
+	#print("gameplay control at work")
 	center_container_2.hide()
 	center_container.show()

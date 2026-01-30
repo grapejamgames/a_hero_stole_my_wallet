@@ -8,6 +8,7 @@ var hero : Node
 
 signal hide_grid
 signal examine_polaroid(name: String, picture: Texture, statement: String)
+signal hero_assigned
 
 
 # Called when the node enters the scene tree for the first time.
@@ -20,7 +21,7 @@ func _on_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		#print("input event mouse button")
 		if event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
-			print("A click happened!")
+			#print("A click happened!")
 			examine_polaroid.emit(hero_description.name, hero_description.picture, statement)
 			emit_signal("hide_grid")
 
@@ -30,7 +31,9 @@ func assign_random_hero() -> void:
 	if not hero:
 		print(hero_description.name, " couldn't assign hero node")
 	else:
-		print(hero_description.name, " assigned ", hero.name)
+		hero.remove_from_group("unassigned_heroes")
+		update_frame(hero)
+		hero_assigned.emit(hero.name)
 
 
 func set_resource() -> void:
@@ -42,8 +45,16 @@ func set_resource() -> void:
 
 func _on_game_ready() -> void:
 	assign_random_hero()
-	if hero:
-		statement = hero.my_statement
-		set_resource()
-		hero_description.name = hero.name  # Use node name
-		texture_rect.texture = hero_description.headshot
+
+
+func _on_hero_assigned(assigned_name : String) -> void:
+	# If hero is assigned twice, change this one.
+	if hero.name == assigned_name:
+		assign_random_hero()
+
+
+func update_frame(assign_hero : Node) -> void:
+	statement = hero.my_statement
+	set_resource()
+	hero_description.name = hero.name  # Use node name
+	texture_rect.texture = hero_description.headshot

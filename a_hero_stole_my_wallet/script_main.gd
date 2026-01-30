@@ -10,7 +10,6 @@ signal game_ready
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	group_the_hero_nodes()
-	print(selected_heroes)
 	game_ready.emit()
 
 
