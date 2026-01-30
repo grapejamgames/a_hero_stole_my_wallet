@@ -9,11 +9,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.07999855, 0.07999945)
 
-[node name="Restart" type="Button" parent="." unique_id=1984469548]
+[node name="Restart" type="Button" parent="." unique_id=1899491664]
 layout_mode = 0
 offset_right = 73.0
 offset_bottom = 14.0
+scale = Vector2(10, 10)
 text = "Restart"
 script = ExtResource("1_3bml8")
 
