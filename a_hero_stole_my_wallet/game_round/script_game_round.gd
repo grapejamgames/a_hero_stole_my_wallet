@@ -3,7 +3,7 @@ extends Node
 
 @export var _number_of_heroes : int
 
-var heroes : Array[Node]
+var selected_heroes : Array[Node]
 var attributes : Array[Node]
 var rand_num := RandomNumberGenerator.new()
 var guilty_hero : Node
@@ -16,9 +16,9 @@ func _init(number_of_heroes : int = 0) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	heroes = get_tree().get_nodes_in_group("heroes")
-	if heroes.is_empty():
-		print("No heroes found")
+	get_random_heroes(_number_of_heroes)
+	if selected_heroes.is_empty():
+		print("No heroes selected")
 		return
 
 	get_tree().call_group("attributes", "validate")
@@ -27,11 +27,11 @@ func _ready() -> void:
 		print("No attributes found")
 		return
 
-	guilty_hero = choose_guilty_hero()
+	not_guilty_heroes = selected_heroes.duplicate(true)
+	guilty_hero = choose_guilty_hero(not_guilty_heroes)
 	guilty_hero.remove_from_group("not_guilty")
 	guilty_hero.my_statement = guilty_hero.get_statement_about_me(false)
 
-	not_guilty_heroes = get_tree().get_nodes_in_group("not_guilty")
 	for hero in not_guilty_heroes:
 		# Todo check for dupes
 		hero.my_statement = guilty_hero.get_statement_about_me(true)
@@ -39,21 +39,32 @@ func _ready() -> void:
 	console_output()
 
 
-func choose_guilty_hero() -> Node:
-	return get_random_hero()
+func choose_guilty_hero(heroes : Array[Node]) -> Node:
+	return pop_random_hero(heroes)
 
 
-func get_random_hero() -> Node:
-	if heroes:
-		var rand_int = rand_num.randi_range(0, heroes.size() - 1)
-		return heroes[rand_int]
+# pick a random value from the array but then remove it from the array
+# so that subsequent selections don't repeat
+func pop_random_hero(hero_list : Array[Node]) -> Node:
+	if hero_list:
+		var selected = hero_list.pick_random()
+		hero_list.erase(selected)
+		return selected
 	return null
 
+
 func console_output() -> void:
-	print("The heroes are: ")
-	for hero in heroes:
+	print("The selected heroes are: ")
+	for hero in selected_heroes:
 		print(hero.name, " : ", hero.get_description())
 	
 	print("The guilty hero is ", guilty_hero.name )		
-	for hero in heroes:
+	for hero in selected_heroes:
 		print(hero.name, " said ", hero.my_statement)
+
+
+func get_random_heroes(number_of_heroes : int) -> Array[Node]:
+	var unselected_heroes : Array[Node] = $Heroes.get_children()
+	for i in range(number_of_heroes):
+		selected_heroes.push_back(pop_random_hero(unselected_heroes))
+	return selected_heroes
