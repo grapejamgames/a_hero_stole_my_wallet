@@ -1,45 +1,45 @@
-[gd_scene load_steps=4 format=3 uid="uid://bm45ri5483juc"]
+[gd_scene format=3 uid="uid://bm45ri5483juc"]
 
 [ext_resource type="Script" uid="uid://bsddbq12k7sq3" path="res://game_round/script_game_round.gd" id="1_2ihug"]
 [ext_resource type="PackedScene" uid="uid://b36vhhh4gtf0t" path="res://game_round/components/scene_attribute.tscn" id="1_x65pb"]
 [ext_resource type="PackedScene" uid="uid://bytp1jf0daift" path="res://game_round/components/scene_hero.tscn" id="2_j3rtm"]
 
-[node name="GameRound" type="Node"]
+[node name="GameRound" type="Node" unique_id=2125380014]
 script = ExtResource("1_2ihug")
 _number_of_heroes = 9
 
-[node name="Attributes" type="Node" parent="."]
+[node name="Attributes" type="Node" parent="." unique_id=1155559034]
 
-[node name="Hair" parent="Attributes" instance=ExtResource("1_x65pb")]
+[node name="Hair" parent="Attributes" unique_id=1870854557 instance=ExtResource("1_x65pb")]
 _adjectives = Array[String](["black", "blond", "brown"])
 _singular = false
 
-[node name="Costume" parent="Attributes" instance=ExtResource("1_x65pb")]
+[node name="Costume" parent="Attributes" unique_id=2107588242 instance=ExtResource("1_x65pb")]
 _adjectives = Array[String](["blue", "red", "green"])
 
-[node name="Eyes" parent="Attributes" instance=ExtResource("1_x65pb")]
+[node name="Eyes" parent="Attributes" unique_id=1588839944 instance=ExtResource("1_x65pb")]
 _adjectives = Array[String](["blue", "brown", "green"])
 _singular = false
 
-[node name="Beard" parent="Attributes" instance=ExtResource("1_x65pb")]
+[node name="Beard" parent="Attributes" unique_id=77174975 instance=ExtResource("1_x65pb")]
 _binary = true
 
-[node name="Glasses" parent="Attributes" instance=ExtResource("1_x65pb")]
+[node name="Glasses" parent="Attributes" unique_id=556758550 instance=ExtResource("1_x65pb")]
 _binary = true
 
-[node name="Makeup" parent="Attributes" instance=ExtResource("1_x65pb")]
+[node name="Makeup" parent="Attributes" unique_id=1320362588 instance=ExtResource("1_x65pb")]
 _singular = false
 _binary = true
 
-[node name="Mask" parent="Attributes" instance=ExtResource("1_x65pb")]
+[node name="Mask" parent="Attributes" unique_id=51354846 instance=ExtResource("1_x65pb")]
 _binary = true
 
-[node name="Cape" parent="Attributes" instance=ExtResource("1_x65pb")]
+[node name="Cape" parent="Attributes" unique_id=1406204450 instance=ExtResource("1_x65pb")]
 _binary = true
 
-[node name="Heroes" type="Node" parent="."]
+[node name="Heroes" type="Node" parent="." unique_id=1954824154]
 
-[node name="Angela" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Angela" parent="Heroes" unique_id=1589529642 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["false"],
 "cape": ["true"],
@@ -51,7 +51,7 @@ _description = Dictionary[String, Array]({
 "mask": ["false"]
 })
 
-[node name="Bear" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Bear" parent="Heroes" unique_id=2022361204 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["true"],
 "cape": ["true"],
@@ -63,19 +63,19 @@ _description = Dictionary[String, Array]({
 "mask": ["false"]
 })
 
-[node name="Brittney" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Brittney" parent="Heroes" unique_id=508808984 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["false"],
 "cape": ["true"],
 "costume": ["red"],
 "eyes": ["blue"],
 "glasses": ["false"],
-"hair": ["white"],
+"hair": ["blond"],
 "makeup": ["true"],
 "mask": ["false"]
 })
 
-[node name="Chad" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Chad" parent="Heroes" unique_id=1825809616 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["true"],
 "cape": ["true"],
@@ -87,7 +87,7 @@ _description = Dictionary[String, Array]({
 "mask": ["true"]
 })
 
-[node name="Claire" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Claire" parent="Heroes" unique_id=585362320 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["false"],
 "cape": ["true"],
@@ -99,7 +99,7 @@ _description = Dictionary[String, Array]({
 "mask": ["false"]
 })
 
-[node name="Margot" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Margot" parent="Heroes" unique_id=1320470978 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["false"],
 "cape": ["false"],
@@ -111,7 +111,7 @@ _description = Dictionary[String, Array]({
 "mask": ["true"]
 })
 
-[node name="Owen" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Owen" parent="Heroes" unique_id=2142994905 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["false"],
 "cape": ["true"],
@@ -123,7 +123,7 @@ _description = Dictionary[String, Array]({
 "mask": ["true"]
 })
 
-[node name="Phillip" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Phillip" parent="Heroes" unique_id=783196922 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["true"],
 "cape": ["false"],
@@ -135,7 +135,7 @@ _description = Dictionary[String, Array]({
 "mask": ["true"]
 })
 
-[node name="Ralph" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Ralph" parent="Heroes" unique_id=1643519567 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["true"],
 "cape": ["false"],
@@ -147,7 +147,7 @@ _description = Dictionary[String, Array]({
 "mask": ["false"]
 })
 
-[node name="Simon" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Simon" parent="Heroes" unique_id=1444174447 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["false"],
 "cape": ["true"],
@@ -159,7 +159,7 @@ _description = Dictionary[String, Array]({
 "mask": ["false"]
 })
 
-[node name="Sophia" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Sophia" parent="Heroes" unique_id=506210867 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["false"],
 "cape": ["true"],
@@ -171,7 +171,7 @@ _description = Dictionary[String, Array]({
 "mask": ["false"]
 })
 
-[node name="Tiffany" parent="Heroes" instance=ExtResource("2_j3rtm")]
+[node name="Tiffany" parent="Heroes" unique_id=1525284737 instance=ExtResource("2_j3rtm")]
 _description = Dictionary[String, Array]({
 "beard": ["false"],
 "cape": ["false"],
