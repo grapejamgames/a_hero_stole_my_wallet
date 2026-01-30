@@ -36,12 +36,11 @@ func _ready() -> void:
 		# Todo check for dupes
 		hero.my_statement = guilty_hero.get_statement_about_me(true)
 	
-	console_output()
+	#console_output()
 
 
 func choose_guilty_hero(heroes : Array[Node]) -> Node:
 	return pop_random_hero(heroes)
-
 
 # pick a random value from the array but then remove it from the array
 # so that subsequent selections don't repeat

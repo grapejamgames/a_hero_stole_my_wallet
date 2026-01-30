@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cauvtfrainhwp"]
 
-[ext_resource type="Script" uid="uid://cbvumfdf54jxm" path="res://Scripts/hero_description.gd" id="1_0bo4j"]
+[ext_resource type="Script" uid="uid://cbvumfdf54jxm" path="res://UI/Scripts/hero_description.gd" id="1_0bo4j"]
 
 [node name="HeroHeadshot" type="Container"]
 custom_minimum_size = Vector2(250, 250)
