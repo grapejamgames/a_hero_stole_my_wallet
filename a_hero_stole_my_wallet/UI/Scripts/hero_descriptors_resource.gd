@@ -1,4 +1,9 @@
+## Todo. Use this instead of modifying heroes individually
+## There is no parser for this data in the heroes yet.
+## Name and picture are currently used.
+
 extends Resource
+
 class_name HeroDescription
 
 @export var name : String
