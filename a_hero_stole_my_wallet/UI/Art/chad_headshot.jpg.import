@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8w8kebvjlnij"
-path="res://.godot/imported/margot_thumbnail.png-59e458b92a53e68aad4acc1570defc88.ctex"
+uid="uid://f4aljj8ntp2a"
+path="res://.godot/imported/chad_headshot.jpg-71a38a0db970792f207dad61b7a3a514.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Art/margot_thumbnail.png"
-dest_files=["res://.godot/imported/margot_thumbnail.png-59e458b92a53e68aad4acc1570defc88.ctex"]
+source_file="res://UI/Art/chad_headshot.jpg"
+dest_files=["res://.godot/imported/chad_headshot.jpg-71a38a0db970792f207dad61b7a3a514.ctex"]
 
 [params]
 

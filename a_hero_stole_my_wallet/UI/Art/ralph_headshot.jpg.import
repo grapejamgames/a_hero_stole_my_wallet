@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ti16x5yn3djy"
-path="res://.godot/imported/sophia_thumbnail.png-af782b6967f27a7cd42613340eccf476.ctex"
+uid="uid://bnnuwcfeptgc2"
+path="res://.godot/imported/ralph_headshot.jpg-5bebdf0b962a8849f2426e3f0e59cd26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Art/sophia_thumbnail.png"
-dest_files=["res://.godot/imported/sophia_thumbnail.png-af782b6967f27a7cd42613340eccf476.ctex"]
+source_file="res://UI/Art/ralph_headshot.jpg"
+dest_files=["res://.godot/imported/ralph_headshot.jpg-5bebdf0b962a8849f2426e3f0e59cd26.ctex"]
 
 [params]
 

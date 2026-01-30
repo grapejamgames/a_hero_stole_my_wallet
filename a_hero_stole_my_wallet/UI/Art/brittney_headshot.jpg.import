@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doh23ydetkxni"
-path="res://.godot/imported/philip_thumbnail.png-760b298b7458f5e766ba8cfeabdd0414.ctex"
+uid="uid://be30x0t4iiio1"
+path="res://.godot/imported/brittney_headshot.jpg-d28772594d58a81d418e296fed201ef1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Art/philip_thumbnail.png"
-dest_files=["res://.godot/imported/philip_thumbnail.png-760b298b7458f5e766ba8cfeabdd0414.ctex"]
+source_file="res://UI/Art/brittney_headshot.jpg"
+dest_files=["res://.godot/imported/brittney_headshot.jpg-d28772594d58a81d418e296fed201ef1.ctex"]
 
 [params]
 

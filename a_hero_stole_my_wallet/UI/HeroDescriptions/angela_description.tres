@@ -1,14 +1,14 @@
-[gd_resource type="Resource" script_class="HeroDescription" load_steps=4 format=3 uid="uid://o475gnjw7x5h"]
+[gd_resource type="Resource" script_class="HeroDescription" format=3 uid="uid://o475gnjw7x5h"]
 
-[ext_resource type="Texture2D" uid="uid://dt8mbd5n5h3im" path="res://Art/angela_thumbnail.png" id="1_nnrlf"]
-[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://Scripts/hero_descriptors_resource.gd" id="1_y6bv7"]
-[ext_resource type="Texture2D" uid="uid://b8fdcjr4jwuji" path="res://Art/angela.jpg" id="2_5pwjm"]
+[ext_resource type="Texture2D" uid="uid://b3kw78mn6e3xx" path="res://UI/Art/angela_headshot.jpg" id="1_7mx0o"]
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://UI/Scripts/hero_descriptors_resource.gd" id="1_y6bv7"]
+[ext_resource type="Texture2D" uid="uid://b8fdcjr4jwuji" path="res://UI/Art/angela.jpg" id="2_5pwjm"]
 
 [resource]
 script = ExtResource("1_y6bv7")
 name = "Angela"
 picture = ExtResource("2_5pwjm")
-headshot = ExtResource("1_nnrlf")
+headshot = ExtResource("1_7mx0o")
 eye_color = 1
 hair_color = 2
 makeup = true

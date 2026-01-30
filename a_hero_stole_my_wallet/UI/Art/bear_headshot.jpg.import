@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7eoc4xlnq6u2"
-path="res://.godot/imported/bear_thumbnail.png-edd08d60ceafdee1a6ba3477b5bbac89.ctex"
+uid="uid://cbsifi6231b2i"
+path="res://.godot/imported/bear_headshot.jpg-1c220dfd70c79978e30ec7272b4a5351.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Art/bear_thumbnail.png"
-dest_files=["res://.godot/imported/bear_thumbnail.png-edd08d60ceafdee1a6ba3477b5bbac89.ctex"]
+source_file="res://UI/Art/bear_headshot.jpg"
+dest_files=["res://.godot/imported/bear_headshot.jpg-1c220dfd70c79978e30ec7272b4a5351.ctex"]
 
 [params]
 

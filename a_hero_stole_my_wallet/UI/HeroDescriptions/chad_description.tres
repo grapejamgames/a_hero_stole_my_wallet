@@ -1,14 +1,14 @@
-[gd_resource type="Resource" script_class="HeroDescription" load_steps=4 format=3 uid="uid://blrdyq7vwxuuy"]
+[gd_resource type="Resource" script_class="HeroDescription" format=3 uid="uid://blrdyq7vwxuuy"]
 
-[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://Scripts/hero_descriptors_resource.gd" id="1_0c1vw"]
-[ext_resource type="Texture2D" uid="uid://bji7akmqmjndm" path="res://Art/chad_thumbnail.png" id="1_xl7ln"]
-[ext_resource type="Texture2D" uid="uid://cykvcotb2n8hn" path="res://Art/chad.jpg" id="2_5fjje"]
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://UI/Scripts/hero_descriptors_resource.gd" id="1_0c1vw"]
+[ext_resource type="Texture2D" uid="uid://f4aljj8ntp2a" path="res://UI/Art/chad_headshot.jpg" id="1_ju8k0"]
+[ext_resource type="Texture2D" uid="uid://cykvcotb2n8hn" path="res://UI/Art/chad.jpg" id="2_5fjje"]
 
 [resource]
 script = ExtResource("1_0c1vw")
 name = "Chad"
 picture = ExtResource("2_5fjje")
-headshot = ExtResource("1_xl7ln")
+headshot = ExtResource("1_ju8k0")
 hair_color = 1
 facial_hair = true
 mask = true

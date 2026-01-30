@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bipa2gqggrh"
-path="res://.godot/imported/owen_thumbnail.png-c61589ac34ffaf91e0d682f07630a360.ctex"
+uid="uid://d1n6ybdic8bli"
+path="res://.godot/imported/pushpin.png-01cba1b9bc595440191431a788f34d80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Art/owen_thumbnail.png"
-dest_files=["res://.godot/imported/owen_thumbnail.png-c61589ac34ffaf91e0d682f07630a360.ctex"]
+source_file="res://UI/Art/pushpin.png"
+dest_files=["res://.godot/imported/pushpin.png-01cba1b9bc595440191431a788f34d80.ctex"]
 
 [params]
 

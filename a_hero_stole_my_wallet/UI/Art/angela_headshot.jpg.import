@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dt8mbd5n5h3im"
-path="res://.godot/imported/angela_thumbnail.png-3cee48c01538914a1810b53f90a37c1c.ctex"
+uid="uid://b3kw78mn6e3xx"
+path="res://.godot/imported/angela_headshot.jpg-cd08a3ebb66ba150e796789e0f241d2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Art/angela_thumbnail.png"
-dest_files=["res://.godot/imported/angela_thumbnail.png-3cee48c01538914a1810b53f90a37c1c.ctex"]
+source_file="res://UI/Art/angela_headshot.jpg"
+dest_files=["res://.godot/imported/angela_headshot.jpg-cd08a3ebb66ba150e796789e0f241d2c.ctex"]
 
 [params]
 

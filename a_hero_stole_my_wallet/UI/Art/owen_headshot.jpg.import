@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bji7akmqmjndm"
-path="res://.godot/imported/chad_thumbnail.png-aca13cc6bbced8b931dd66d1d1eae1b6.ctex"
+uid="uid://b33i2bf3xpy5l"
+path="res://.godot/imported/owen_headshot.jpg-1f3b0677658d8b86da59fd3145bacbe6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Art/chad_thumbnail.png"
-dest_files=["res://.godot/imported/chad_thumbnail.png-aca13cc6bbced8b931dd66d1d1eae1b6.ctex"]
+source_file="res://UI/Art/owen_headshot.jpg"
+dest_files=["res://.godot/imported/owen_headshot.jpg-1f3b0677658d8b86da59fd3145bacbe6.ctex"]
 
 [params]
 

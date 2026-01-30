@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c78kcpnrt6esg"
-path="res://.godot/imported/claire_thumbnail.png-42e090f2f8f370978ccf5d6fbf5feb4f.ctex"
+uid="uid://cj8j43l0m25ho"
+path="res://.godot/imported/clair_headshot.jpg-b8c594edf8fa5369d947a177f470d683.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Art/claire_thumbnail.png"
-dest_files=["res://.godot/imported/claire_thumbnail.png-42e090f2f8f370978ccf5d6fbf5feb4f.ctex"]
+source_file="res://UI/Art/clair_headshot.jpg"
+dest_files=["res://.godot/imported/clair_headshot.jpg-b8c594edf8fa5369d947a177f470d683.ctex"]
 
 [params]
 
