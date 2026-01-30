@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://1b20s5oiummp"]
+
+[ext_resource type="Script" uid="uid://5ejb2vcafsvv" path="res://Debug/script_restart_button.gd" id="1_3bml8"]
+
+[node name="Debug" type="Control" unique_id=594129894]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Restart" type="Button" parent="." unique_id=1984469548]
+layout_mode = 0
+offset_right = 73.0
+offset_bottom = 14.0
+text = "Restart"
+script = ExtResource("1_3bml8")
+
+[connection signal="pressed" from="Restart" to="Restart" method="_on_pressed"]
