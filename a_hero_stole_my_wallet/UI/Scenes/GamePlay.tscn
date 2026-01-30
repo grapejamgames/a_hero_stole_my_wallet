@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://d2lifsdnf528a"]
+[gd_scene format=3 uid="uid://d2lifsdnf528a"]
 
 [ext_resource type="Script" uid="uid://3qd81cpsdfnu" path="res://UI/Scripts/game_play.gd" id="1_82qy8"]
 [ext_resource type="PackedScene" uid="uid://cauvtfrainhwp" path="res://UI/Scenes/hero_headshot.tscn" id="1_wqapa"]
@@ -9,7 +9,7 @@
 [ext_resource type="Resource" uid="uid://bs31333sgff6o" path="res://UI/HeroDescriptions/brittney_description.tres" id="4_0wac4"]
 [ext_resource type="Resource" uid="uid://blrdyq7vwxuuy" path="res://UI/HeroDescriptions/chad_description.tres" id="5_0mu5b"]
 [ext_resource type="Resource" uid="uid://b28mh2waa3e2s" path="res://UI/HeroDescriptions/owen_description.tres" id="7_ail8s"]
-[ext_resource type="Resource" uid="uid://ct45urkxa8vkx" path="res://UI/HeroDescriptions/philip_description.tres" id="8_82qy8"]
+[ext_resource type="Resource" uid="uid://ct45urkxa8vkx" path="res://UI/HeroDescriptions/phillip_description.tres" id="8_82qy8"]
 [ext_resource type="Resource" uid="uid://lu61g6poi1c6" path="res://UI/HeroDescriptions/simon_description.tres" id="9_vbmjt"]
 [ext_resource type="Resource" uid="uid://do0usik5lxpmn" path="res://UI/HeroDescriptions/sophia_description.tres" id="10_axlnd"]
 [ext_resource type="PackedScene" uid="uid://dyqyg2x0ob4ks" path="res://UI/Scenes/examine_polaroid.tscn" id="11_ail8s"]

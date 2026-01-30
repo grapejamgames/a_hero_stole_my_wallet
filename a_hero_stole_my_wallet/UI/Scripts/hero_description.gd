@@ -33,7 +33,6 @@ func assign_random_hero() -> void:
 	else:
 		hero.remove_from_group("unassigned_heroes")
 		update_frame(hero)
-		hero_assigned.emit(hero.name)
 
 
 func set_resource() -> void:
@@ -47,14 +46,8 @@ func _on_game_ready() -> void:
 	assign_random_hero()
 
 
-func _on_hero_assigned(assigned_name : String) -> void:
-	# If hero is assigned twice, change this one.
-	if hero.name == assigned_name:
-		assign_random_hero()
-
-
-func update_frame(assign_hero : Node) -> void:
-	statement = hero.my_statement
+func update_frame(assigned_hero : Node) -> void:
+	statement = assigned_hero.my_statement
 	set_resource()
-	hero_description.name = hero.name  # Use node name
+	hero_description.name = assigned_hero.name  # Use node name
 	texture_rect.texture = hero_description.headshot
