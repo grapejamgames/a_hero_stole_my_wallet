@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="HeroDescription" load_steps=4 format=3 uid="uid://p7s5v6sc41i8"]
+
+[ext_resource type="Texture2D" uid="uid://b8w8kebvjlnij" path="res://Art/margot_thumbnail.png" id="1_jb87m"]
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://Scripts/hero_descriptors_resource.gd" id="2_m4afj"]
+[ext_resource type="Texture2D" uid="uid://c5y1wioaie711" path="res://Art/margot.jpg" id="2_ug0d2"]
+
+[resource]
+script = ExtResource("2_m4afj")
+name = "Margot"
+picture = ExtResource("2_ug0d2")
+headshot = ExtResource("1_jb87m")
+mask = true
+pet = 2
+metadata/_custom_type_script = "uid://lmu125hxdee"

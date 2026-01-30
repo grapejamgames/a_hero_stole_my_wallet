@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="HeroDescription" load_steps=4 format=3 uid="uid://dud8evuwao2or"]
+
+[ext_resource type="Texture2D" uid="uid://c78kcpnrt6esg" path="res://Art/claire_thumbnail.png" id="1_c8dnj"]
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://Scripts/hero_descriptors_resource.gd" id="1_fqxsm"]
+[ext_resource type="Texture2D" uid="uid://3m8eidnamjh3" path="res://Art/claire.jpg" id="2_jgvss"]
+
+[resource]
+script = ExtResource("1_fqxsm")
+name = "Claire"
+picture = ExtResource("2_jgvss")
+headshot = ExtResource("1_c8dnj")
+eye_color = 2
+hair_color = 2
+costume_color = 1
+glasses = true
+cape = true
+pet = 1
+metadata/_custom_type_script = "uid://lmu125hxdee"

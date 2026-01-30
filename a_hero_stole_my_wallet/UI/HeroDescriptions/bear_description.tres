@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="HeroDescription" load_steps=4 format=3 uid="uid://c2mulx2tsjpuw"]
+
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://Scripts/hero_descriptors_resource.gd" id="1_kgnmx"]
+[ext_resource type="Texture2D" uid="uid://b7eoc4xlnq6u2" path="res://Art/bear_thumbnail.png" id="1_vgnd8"]
+[ext_resource type="Texture2D" uid="uid://4iqnewjmoue0" path="res://Art/bear.jpg" id="2_4qidg"]
+
+[resource]
+script = ExtResource("1_kgnmx")
+name = "Bear"
+picture = ExtResource("2_4qidg")
+headshot = ExtResource("1_vgnd8")
+eye_color = 1
+hair_color = 2
+costume_color = 1
+facial_hair = true
+glasses = true
+cape = true
+pet = 1
+metadata/_custom_type_script = "uid://lmu125hxdee"

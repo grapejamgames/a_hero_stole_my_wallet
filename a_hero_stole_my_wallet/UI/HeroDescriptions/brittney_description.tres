@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="HeroDescription" load_steps=4 format=3 uid="uid://bs31333sgff6o"]
+
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://Scripts/hero_descriptors_resource.gd" id="1_0tlsx"]
+[ext_resource type="Texture2D" uid="uid://db7ccphplprtg" path="res://Art/brittney_thumbnail.png" id="1_o30o4"]
+[ext_resource type="Texture2D" uid="uid://d0co6wdgsrtl7" path="res://Art/brittney.jpg" id="2_2rkqp"]
+
+[resource]
+script = ExtResource("1_0tlsx")
+name = "Brittney"
+picture = ExtResource("2_2rkqp")
+headshot = ExtResource("1_o30o4")
+hair_color = 1
+costume_color = 2
+makeup = true
+cape = true
+metadata/_custom_type_script = "uid://lmu125hxdee"

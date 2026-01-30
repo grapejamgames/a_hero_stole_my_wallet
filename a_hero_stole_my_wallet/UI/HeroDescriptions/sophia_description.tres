@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="HeroDescription" load_steps=4 format=3 uid="uid://do0usik5lxpmn"]
+
+[ext_resource type="Texture2D" uid="uid://ti16x5yn3djy" path="res://Art/sophia_thumbnail.png" id="1_7oojk"]
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://Scripts/hero_descriptors_resource.gd" id="1_x4352"]
+[ext_resource type="Texture2D" uid="uid://cs7ry8vfhkrkf" path="res://Art/sophia.jpg" id="2_86t2l"]
+
+[resource]
+script = ExtResource("1_x4352")
+name = "Sophia"
+picture = ExtResource("2_86t2l")
+headshot = ExtResource("1_7oojk")
+eye_color = 1
+costume_color = 2
+glasses = true
+cape = true
+pet = 1
+metadata/_custom_type_script = "uid://lmu125hxdee"

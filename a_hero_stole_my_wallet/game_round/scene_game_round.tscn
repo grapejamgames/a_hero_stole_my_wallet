@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bm45ri5483juc"]
+[gd_scene load_steps=5 format=3 uid="uid://bm45ri5483juc"]
 
 [ext_resource type="Script" uid="uid://bsddbq12k7sq3" path="res://game_round/script_game_round.gd" id="1_2ihug"]
 [ext_resource type="PackedScene" uid="uid://b36vhhh4gtf0t" path="res://game_round/components/scene_attribute.tscn" id="1_x65pb"]
 [ext_resource type="PackedScene" uid="uid://bytp1jf0daift" path="res://game_round/components/scene_hero.tscn" id="2_j3rtm"]
+[ext_resource type="PackedScene" uid="uid://d2lifsdnf528a" path="res://UI/Scenes/GamePlay.tscn" id="4_2ihug"]
 
 [node name="GameRound" type="Node"]
 script = ExtResource("1_2ihug")
@@ -182,3 +183,5 @@ _description = Dictionary[String, Array]({
 "makeup": ["true"],
 "mask": ["false"]
 })
+
+[node name="Control" parent="." instance=ExtResource("4_2ihug")]

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="HeroDescription" load_steps=4 format=3 uid="uid://ct45urkxa8vkx"]
+
+[ext_resource type="Texture2D" uid="uid://doh23ydetkxni" path="res://Art/philip_thumbnail.png" id="1_olrdq"]
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://Scripts/hero_descriptors_resource.gd" id="1_srkio"]
+[ext_resource type="Texture2D" uid="uid://c85jh75bn81y0" path="res://Art/philip.jpg" id="2_feepe"]
+
+[resource]
+script = ExtResource("1_srkio")
+name = "Philip"
+picture = ExtResource("2_feepe")
+headshot = ExtResource("1_olrdq")
+costume_color = 2
+facial_hair = true
+mask = true
+pet = 1
+metadata/_custom_type_script = "uid://lmu125hxdee"

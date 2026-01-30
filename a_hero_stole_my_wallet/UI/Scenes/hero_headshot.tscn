@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cauvtfrainhwp"]
+
+[ext_resource type="Script" uid="uid://cbvumfdf54jxm" path="res://Scripts/hero_description.gd" id="1_0bo4j"]
+
+[node name="HeroHeadshot" type="Container"]
+custom_minimum_size = Vector2(250, 250)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0bo4j")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
