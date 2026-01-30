@@ -18,6 +18,9 @@ func _init(description = null) -> void:
 
 
 func _ready() -> void:
+	if not _resource:
+		set_resource()
+
 	get_all_attributes()
 	if all_attributes.is_empty():
 		print(name, " couldn't find any attributes")
@@ -120,5 +123,17 @@ func get_statement_about_me(fact : bool) -> String:
 		statement = all_attributes[noun].get_random_statement(adjective, fact)
 	return statement
 
+
 func get_resource() -> HeroDescription:
 	return _resource
+
+
+func set_resource() -> void:
+	var resource_path = "res://UI/HeroDescriptions/"
+	var lower_name = name.to_lower()
+	var hero_resource_path = "{folder}{name}_description.tres"
+	_resource = load(hero_resource_path.format({
+			"folder" : resource_path,
+			"name" : lower_name
+		})
+	)
