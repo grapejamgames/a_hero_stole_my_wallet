@@ -6,7 +6,7 @@
 
 [node name="GameRound" type="Node"]
 script = ExtResource("1_2ihug")
-_number_of_heroes = 3
+_number_of_heroes = 9
 
 [node name="Attributes" type="Node" parent="."]
 

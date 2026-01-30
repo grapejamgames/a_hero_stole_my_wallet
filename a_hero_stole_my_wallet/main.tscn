@@ -1,10 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://btoc5cwe24jv1"]
+[gd_scene load_steps=4 format=3 uid="uid://btoc5cwe24jv1"]
 
 [ext_resource type="PackedScene" uid="uid://d2lifsdnf528a" path="res://UI/Scenes/GamePlay.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://f5fb3iaioq4k" path="res://script_main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bm45ri5483juc" path="res://game_round/scene_game_round.tscn" id="2_h2yge"]
 
 [node name="Main" type="Node"]
+script = ExtResource("1_h2yge")
 
-[node name="UI" parent="." instance=ExtResource("1_0xm2m")]
+[node name="UI" type="Node" parent="."]
 
-[node name="Backend" parent="." instance=ExtResource("2_h2yge")]
+[node name="GamePlay" parent="UI" instance=ExtResource("1_0xm2m")]
+offset_right = -40.0
+offset_bottom = -40.0
+
+[node name="GameRound" parent="." instance=ExtResource("2_h2yge")]

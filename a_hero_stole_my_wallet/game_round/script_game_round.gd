@@ -16,7 +16,7 @@ func _init(number_of_heroes : int = 0) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	get_random_heroes(_number_of_heroes)
+	selected_heroes = get_random_heroes(_number_of_heroes)
 	if selected_heroes.is_empty():
 		print("No heroes selected")
 		return
