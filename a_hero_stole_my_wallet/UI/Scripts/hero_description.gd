@@ -1,7 +1,10 @@
+
 extends Container
 @export var hero_description: HeroDescription
 
-@onready var texture_rect: TextureRect = $TextureRect
+@onready var texture_rect: TextureRect = $Control/PanelContainer/MarginContainer/VBoxContainer/headshot
+@onready var label: Label = $Control/PanelContainer/MarginContainer/VBoxContainer/Label
+@onready var panel_container: PanelContainer = $Control/PanelContainer
 
 var statement : String = "I don't know anything"
 var hero : Node
@@ -14,6 +17,9 @@ signal hero_assigned
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	get_node("/root/Main").game_ready.connect(_on_game_ready)
+	randomize()
+	var random_tilt: float = randf_range(-2.5,2.5)
+	panel_container.rotation_degrees = random_tilt
 
 
 func _on_gui_input(event: InputEvent) -> void:

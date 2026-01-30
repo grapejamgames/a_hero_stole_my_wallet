@@ -1,14 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5pjhgm5hqma6"]
+[gd_scene format=3 uid="uid://c5pjhgm5hqma6"]
 
-[ext_resource type="Texture2D" uid="uid://c62ps56pjggts" path="res://Art/Materials/Cork_rgtmrnp0_1K_BaseColor.jpg" id="1_4kdgt"]
+[ext_resource type="Texture2D" uid="uid://c62ps56pjggts" path="res://UI/Art/Materials/Cork_rgtmrnp0_1K_BaseColor.jpg" id="1_4kdgt"]
 
-[node name="Panel" type="Panel"]
+[node name="Panel" type="Panel" unique_id=1038756661]
 clip_contents = true
-custom_minimum_size = Vector2(1200, 900)
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1582816860]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -16,5 +18,5 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_4kdgt")
-expand_mode = 2
+expand_mode = 4
 stretch_mode = 1
