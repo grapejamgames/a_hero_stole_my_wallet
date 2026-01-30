@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" uid="uid://d2147istdhnpk" path="res://game_round/components/script_hero.gd" id="1_780bu"]
 
-[node name="Hero" type="Node" groups=["heroes", "not_guilty"]]
+[node name="Hero" type="Node"]
 script = ExtResource("1_780bu")
