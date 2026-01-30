@@ -4,6 +4,7 @@ class_name Hero
 extends Node
 
 @export var _description : Dictionary[String, Array]
+@export var _resource : HeroDescription
 
 var my_statement : String
 var all_attributes : Dictionary[String, Node]  # All attributes
@@ -119,5 +120,5 @@ func get_statement_about_me(fact : bool) -> String:
 		statement = all_attributes[noun].get_random_statement(adjective, fact)
 	return statement
 
-
-# TODO : Attribute validator
+func get_resource() -> HeroDescription:
+	return _resource

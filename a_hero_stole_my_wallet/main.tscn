@@ -10,7 +10,5 @@ script = ExtResource("1_h2yge")
 [node name="UI" type="Node" parent="."]
 
 [node name="GamePlay" parent="UI" instance=ExtResource("1_0xm2m")]
-offset_right = -40.0
-offset_bottom = -40.0
 
 [node name="GameRound" parent="." instance=ExtResource("2_h2yge")]
