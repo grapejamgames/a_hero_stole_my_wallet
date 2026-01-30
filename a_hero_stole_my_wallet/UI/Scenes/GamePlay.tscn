@@ -54,7 +54,7 @@ hero_description = ExtResource("3_82qy8")
 
 [node name="VSeparator" type="VSeparator" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1704762894]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 20
 theme_override_styles/separator = SubResource("StyleBoxEmpty_82qy8")
 
 [node name="HeroHeadshot2" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=72196540 instance=ExtResource("1_wqapa")]
@@ -63,7 +63,7 @@ hero_description = ExtResource("2_i2hf2")
 
 [node name="VSeparator2" type="VSeparator" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1829560806]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 20
 theme_override_styles/separator = SubResource("StyleBoxEmpty_82qy8")
 
 [node name="HeroHeadshot3" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=362101978 instance=ExtResource("1_wqapa")]
@@ -72,7 +72,7 @@ hero_description = ExtResource("4_0wac4")
 
 [node name="HSeparator" type="HSeparator" parent="CenterContainer/VBoxContainer" unique_id=708293201]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 20
 theme_override_styles/separator = SubResource("StyleBoxEmpty_0mu5b")
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=606412663]
@@ -84,7 +84,7 @@ hero_description = ExtResource("5_0mu5b")
 
 [node name="VSeparator3" type="VSeparator" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=965836835]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 20
 theme_override_styles/separator = SubResource("StyleBoxEmpty_82qy8")
 
 [node name="HeroHeadshot2" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=570312796 instance=ExtResource("1_wqapa")]
@@ -93,7 +93,7 @@ hero_description = ExtResource("3_i2hf2")
 
 [node name="VSeparator4" type="VSeparator" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=1979627175]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 20
 theme_override_styles/separator = SubResource("StyleBoxEmpty_82qy8")
 
 [node name="HeroHeadshot3" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=925361544 instance=ExtResource("1_wqapa")]
@@ -103,7 +103,7 @@ hero_description = ExtResource("7_ail8s")
 [node name="HSeparator2" type="HSeparator" parent="CenterContainer/VBoxContainer" unique_id=105086433]
 custom_minimum_size = Vector2(0, 10)
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 20
 theme_override_styles/separator = SubResource("StyleBoxEmpty_ail8s")
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=226286802]
@@ -115,7 +115,7 @@ hero_description = ExtResource("8_82qy8")
 
 [node name="VSeparator5" type="VSeparator" parent="CenterContainer/VBoxContainer/HBoxContainer3" unique_id=1409864575]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 20
 theme_override_styles/separator = SubResource("StyleBoxEmpty_82qy8")
 
 [node name="HeroHeadshot2" parent="CenterContainer/VBoxContainer/HBoxContainer3" unique_id=1257919855 instance=ExtResource("1_wqapa")]
@@ -124,7 +124,7 @@ hero_description = ExtResource("9_vbmjt")
 
 [node name="VSeparator6" type="VSeparator" parent="CenterContainer/VBoxContainer/HBoxContainer3" unique_id=180763470]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 20
 theme_override_styles/separator = SubResource("StyleBoxEmpty_82qy8")
 
 [node name="HeroHeadshot3" parent="CenterContainer/VBoxContainer/HBoxContainer3" unique_id=1762731749 instance=ExtResource("1_wqapa")]
