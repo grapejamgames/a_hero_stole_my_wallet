@@ -69,8 +69,10 @@ func get_random_statement(adjective : String, fact : bool) -> String:
 	if not fact:
 		adjective = get_different_adjective(adjective)
 	var adlibs = Adlibs.fetch(adjective, self)
-	var rand_int = rand_num.randi_range(0, adlibs.size() - 1)
+	var rand_int : int = rand_num.randi_range(0, adlibs.size() - 1)
+	var vowel : String = ""
 	return adlibs[rand_int].format({
+		"vowel": vowel,
 		"noun" : _noun,
 		"adjective" : adjective
 	})
