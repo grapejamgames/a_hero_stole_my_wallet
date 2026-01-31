@@ -27,4 +27,6 @@ func _on_yes_pressed() -> void:
 
 func _on_no_pressed() -> void:
 	print("No")
+	canvas_layer_2.hide()
 	sure_container.hide()
+	
