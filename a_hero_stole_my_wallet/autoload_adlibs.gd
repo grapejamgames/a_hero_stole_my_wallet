@@ -87,7 +87,7 @@ static var adlibs_plural_binary : Array[String] = [
 	"They seemed to have {noun}",
 	"I'm telling you, they had {noun}",
 	"There was no mistaking those {noun}",
-	"They walked in with {noun}"=
+	"They walked in with {noun}"
 ]
 
 static var adlibs_singular_negative_binary : Array[String] = [
