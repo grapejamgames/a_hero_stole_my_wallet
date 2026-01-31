@@ -10,7 +10,7 @@ var statement : String = "I don't know anything"
 var hero : Node
 
 signal hide_grid
-signal examine_polaroid(name: String, picture: Texture, statement: String)
+signal examine_polaroid(name_string: String, picture: Texture, statement: String)
 signal hero_assigned
 
 
@@ -20,6 +20,7 @@ func _ready() -> void:
 	randomize()
 	var random_tilt: float = randf_range(-2.5,2.5)
 	panel_container.rotation_degrees = random_tilt
+	label.text = hero_description.name
 
 
 func _on_gui_input(event: InputEvent) -> void:

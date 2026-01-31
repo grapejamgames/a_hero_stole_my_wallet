@@ -8,6 +8,8 @@ var name_text : String
 signal show_grid
 signal endgame(hero_name: String)
 
+
+
 func _on_hero_headshot_examine_polaroid(name_string: String, picture: Texture, statement: String) -> void:
 	#print("updating polaroid")
 	hero_name.text = name_string
