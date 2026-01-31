@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://4v4osyr7dy2l"]
+
+[ext_resource type="Theme" uid="uid://cnwpo35j36tgu" path="res://UI/Themes/polaroid.tres" id="1_jkbtx"]
+[ext_resource type="Script" uid="uid://db6hqfaipso5a" path="res://UI/Scripts/script_polaroid.gd" id="2_bofgo"]
+[ext_resource type="Texture2D" uid="uid://d0co6wdgsrtl7" path="res://UI/Art/brittney.jpg" id="2_sdnjh"]
+[ext_resource type="Resource" uid="uid://o475gnjw7x5h" path="res://UI/HeroDescriptions/angela_description.tres" id="3_bofgo"]
+
+[node name="Polaroid" type="PanelContainer" unique_id=247869218 groups=["filled_frames"]]
+theme = ExtResource("1_jkbtx")
+script = ExtResource("2_bofgo")
+hero_description = ExtResource("3_bofgo")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1054933928]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1664221731]
+layout_mode = 2
+
+[node name="HeroName" type="Label" parent="MarginContainer/VBoxContainer" unique_id=363464024]
+layout_mode = 2
+text = "Brittney"
+horizontal_alignment = 1
+
+[node name="HeroPhoto" type="TextureRect" parent="MarginContainer/VBoxContainer" unique_id=1460904090]
+layout_mode = 2
+texture = ExtResource("2_sdnjh")
+
+[node name="HeroStatement" type="Label" parent="MarginContainer/VBoxContainer" unique_id=318963444]
+layout_mode = 2
+text = "The villan wasn't wearing red."
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

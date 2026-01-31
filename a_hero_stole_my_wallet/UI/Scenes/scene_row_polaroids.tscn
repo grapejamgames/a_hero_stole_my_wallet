@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://bqbi47bv6ga47"]
+
+[ext_resource type="PackedScene" uid="uid://4v4osyr7dy2l" path="res://UI/Scenes/scene_polaroid.tscn" id="1_oj2xs"]
+
+[node name="Row" type="Control" unique_id=455177484]
+layout_mode = 3
+anchor_right = 1.7540001
+anchor_bottom = 1.014
+offset_right = 0.31982422
+offset_bottom = -0.12011719
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Polaroid" parent="." unique_id=247869218 instance=ExtResource("1_oj2xs")]
+layout_mode = 0
+offset_left = 1380.0
+offset_top = 214.0
+offset_right = 1940.0
+offset_bottom = 880.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Polaroid2" parent="." unique_id=1988016809 instance=ExtResource("1_oj2xs")]
+layout_mode = 0
+offset_left = 2057.0
+offset_top = 215.0
+offset_right = 2617.0
+offset_bottom = 881.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Polaroid3" parent="." unique_id=1940884971 instance=ExtResource("1_oj2xs")]
+layout_mode = 0
+offset_left = 713.0
+offset_top = 210.0
+offset_right = 1273.0
+offset_bottom = 876.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Polaroid4" parent="." unique_id=362773519 instance=ExtResource("1_oj2xs")]
+layout_mode = 0
+offset_left = 2727.0
+offset_top = 216.0
+offset_right = 3287.0
+offset_bottom = 882.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Polaroid5" parent="." unique_id=1188665894 instance=ExtResource("1_oj2xs")]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 206.0
+offset_right = 614.0
+offset_bottom = 872.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
