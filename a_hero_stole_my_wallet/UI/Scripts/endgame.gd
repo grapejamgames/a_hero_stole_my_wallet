@@ -3,6 +3,8 @@ extends Control
 @onready var congrats_container: PanelContainer = $Congrats
 @onready var sure_label: Label = $Sure/VBoxContainer/Sure
 @onready var fail_container: PanelContainer = $Fail
+@onready var canvas_layer_2: CanvasLayer = $".."
+@onready var click: AudioStreamPlayer = $Click
 
 
 
@@ -16,12 +18,19 @@ func _ready() -> void:
 func _on_examine_polaroid_endgame(name: String) -> void:
 	sure_label.text = "Are you sure you want to unmask " + name + " as the culprit?"
 	sure_container.show()
+	canvas_layer_2.show()
 	print("endgame!")
 
 
 func _on_yes_pressed() -> void:
-	pass # Replace with function body.
+	click.play()
+	print("Yes")
+	#function to determine if you're right or wrong?
 
 
 func _on_no_pressed() -> void:
+	click.play()
+	print("No")
+	canvas_layer_2.hide()
 	sure_container.hide()
+	

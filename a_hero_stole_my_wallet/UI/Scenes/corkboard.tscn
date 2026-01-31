@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c5pjhgm5hqma6"]
 
-[ext_resource type="Texture2D" uid="uid://c62ps56pjggts" path="res://UI/Art/Materials/Cork_rgtmrnp0_1K_BaseColor.jpg" id="1_4kdgt"]
+[ext_resource type="Texture2D" uid="uid://c62ps56pjggts" path="res://UI/Art/Materials/Cork_rgtmrnp0_1K_BaseColor.jpg" id="1_b1nna"]
 
 [node name="Panel" type="Panel" unique_id=1038756661]
 clip_contents = true
@@ -17,6 +17,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_4kdgt")
+texture = ExtResource("1_b1nna")
 expand_mode = 4
 stretch_mode = 1
