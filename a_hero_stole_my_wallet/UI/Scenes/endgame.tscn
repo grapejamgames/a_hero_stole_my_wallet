@@ -10,6 +10,18 @@ offset_right = 431.0
 offset_bottom = 62.0
 script = ExtResource("1_ovokl")
 
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=219115454]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CenterContainer" unique_id=1448341645]
+layout_mode = 2
+color = Color(0.5370987, 0.5370987, 0.5370987, 0.5)
+
 [node name="Sure" type="PanelContainer" parent="." unique_id=1025527174]
 visible = false
 layout_mode = 0
@@ -29,10 +41,12 @@ layout_mode = 2
 alignment = 1
 
 [node name="Yes" type="Button" parent="Sure/VBoxContainer/HBoxContainer" unique_id=286084239]
+z_index = 2
 layout_mode = 2
 text = "Yes!"
 
 [node name="No" type="Button" parent="Sure/VBoxContainer/HBoxContainer" unique_id=979759913]
+z_index = 2
 layout_mode = 2
 text = "Um..."
 

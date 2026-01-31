@@ -143,9 +143,14 @@ grow_vertical = 2
 [node name="examine_polaroid" parent="CenterContainer2" unique_id=1309929077 instance=ExtResource("11_ail8s")]
 layout_mode = 2
 
-[node name="Endgame" parent="CenterContainer2" unique_id=1164739181 instance=ExtResource("14_g45j2")]
+[node name="Endgame" parent="." unique_id=1164739181 instance=ExtResource("14_g45j2")]
 z_index = 1
-layout_mode = 2
+custom_minimum_size = Vector2(0, -400)
+layout_mode = 0
+offset_left = 960.0
+offset_top = 540.0
+offset_right = 960.0
+offset_bottom = 540.0
 
 [connection signal="examine_polaroid" from="CenterContainer/VBoxContainer/HBoxContainer/HeroHeadshot" to="CenterContainer2/examine_polaroid" method="_on_hero_headshot_examine_polaroid"]
 [connection signal="hide_grid" from="CenterContainer/VBoxContainer/HBoxContainer/HeroHeadshot" to="." method="_on_hero_headshot_hide_grid"]
@@ -165,5 +170,5 @@ layout_mode = 2
 [connection signal="hide_grid" from="CenterContainer/VBoxContainer/HBoxContainer3/HeroHeadshot2" to="." method="_on_hero_headshot_hide_grid"]
 [connection signal="examine_polaroid" from="CenterContainer/VBoxContainer/HBoxContainer3/HeroHeadshot3" to="CenterContainer2/examine_polaroid" method="_on_hero_headshot_examine_polaroid"]
 [connection signal="hide_grid" from="CenterContainer/VBoxContainer/HBoxContainer3/HeroHeadshot3" to="." method="_on_hero_headshot_hide_grid"]
-[connection signal="endgame" from="CenterContainer2/examine_polaroid" to="CenterContainer2/Endgame" method="_on_examine_polaroid_endgame"]
+[connection signal="endgame" from="CenterContainer2/examine_polaroid" to="Endgame" method="_on_examine_polaroid_endgame"]
 [connection signal="show_grid" from="CenterContainer2/examine_polaroid" to="." method="_on_examine_polaroid_show_grid"]

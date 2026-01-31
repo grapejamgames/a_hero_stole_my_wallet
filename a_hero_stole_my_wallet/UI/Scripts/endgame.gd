@@ -20,8 +20,9 @@ func _on_examine_polaroid_endgame(name: String) -> void:
 
 
 func _on_yes_pressed() -> void:
-	pass # Replace with function body.
+	print("Yes")
 
 
 func _on_no_pressed() -> void:
+	print("No")
 	sure_container.hide()
