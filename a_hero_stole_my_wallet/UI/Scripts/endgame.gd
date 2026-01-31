@@ -3,6 +3,7 @@ extends Control
 @onready var congrats_container: PanelContainer = $Congrats
 @onready var sure_label: Label = $Sure/VBoxContainer/Sure
 @onready var fail_container: PanelContainer = $Fail
+@onready var canvas_layer_2: CanvasLayer = $".."
 
 
 
@@ -16,6 +17,7 @@ func _ready() -> void:
 func _on_examine_polaroid_endgame(name: String) -> void:
 	sure_label.text = "Are you sure you want to unmask " + name + " as the culprit?"
 	sure_container.show()
+	canvas_layer_2.show()
 	print("endgame!")
 
 
