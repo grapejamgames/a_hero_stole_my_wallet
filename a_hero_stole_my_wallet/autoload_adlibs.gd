@@ -16,11 +16,11 @@ static var adlibs_plural_binary : Array[String] = [
 	"They had {noun}" # glasses
 ]
 
-static var adlibs_singular_false_binary : Array[String] = [
+static var adlibs_singular_negative_binary : Array[String] = [
 	"They didn't have a {noun}" # beard
 ]
 
-static var adlibs_plural_false_binary : Array[String] = [
+static var adlibs_plural_negative_binary : Array[String] = [
 	"They didn't have {noun}" # glasses
 ]
 
@@ -33,7 +33,7 @@ func fetch(adjective : String, attribute : Node) -> Array[String]:
 	return determine_appropriate_list(adjective)
 
 func determine_appropriate_list(adjective) -> Array[String]:
-	if adjective == "true" or _binary:
+	if adjective == "true":
 		if _singular:
 			return adlibs_singular_binary
 		else:
@@ -41,9 +41,9 @@ func determine_appropriate_list(adjective) -> Array[String]:
 
 	if adjective == "false":
 		if _singular:
-			return adlibs_singular_false_binary
+			return adlibs_singular_negative_binary
 		else:
-			return adlibs_plural_false_binary
+			return adlibs_plural_negative_binary
 
 	if _singular:
 		return adlibs_singular
