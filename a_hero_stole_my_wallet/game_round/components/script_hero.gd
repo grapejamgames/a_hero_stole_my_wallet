@@ -46,6 +46,7 @@ func populate_adjectives() -> void:
 		for adjective in adjectives:
 			if not existing_adjectives.has(adjective):
 				existing_adjectives.push_back(adjective)
+	get_tree().call_group("attributes", "validate")
 
 
 # Ensure keys and values are lowercase to avoid errors.
