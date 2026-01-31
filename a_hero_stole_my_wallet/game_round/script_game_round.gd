@@ -28,7 +28,7 @@ func _ready() -> void:
 		return
 
 	not_guilty_heroes = selected_heroes.duplicate(true)
-	guilty_hero = choose_guilty_hero(not_guilty_heroes)
+	guilty_hero = $Heroes/Phillip #choose_guilty_hero(not_guilty_heroes)
 	guilty_hero.remove_from_group("not_guilty")
 	guilty_hero.my_statement = guilty_hero.get_statement_about_me(false)
 
@@ -36,7 +36,7 @@ func _ready() -> void:
 		# Todo check for dupes
 		hero.my_statement = guilty_hero.get_statement_about_me(true)
 	
-	console_output()
+	#console_output()
 
 
 func choose_guilty_hero(heroes : Array[Node]) -> Node:
@@ -60,7 +60,6 @@ func console_output() -> void:
 	print("The guilty hero is ", guilty_hero.name )		
 	for hero in selected_heroes:
 		print(hero.name, " said ", hero.my_statement)
-
 
 func get_random_heroes(number_of_heroes : int) -> Array[Node]:
 	var unselected_heroes : Array[Node] = $Heroes.get_children()

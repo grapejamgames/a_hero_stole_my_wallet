@@ -76,21 +76,26 @@ func get_random_statement(adjective : String, fact : bool) -> String:
 	})
 
 
-func get_different_adjective(adjective : String) -> String:
+func get_different_adjective(old : String) -> String:
 	if _adjectives.is_empty() or _adjectives.size() < 2:
-		return ""
-	var old : String = adjective
-	var new : String = adjective
+		return ""	
+
+	if _adjectives.size() == 2:
+		for adjective in _adjectives:
+			if adjective != old:
+				return adjective
+
+	var new : String = old
 	while new == old:
 		new = get_random_adjective()
 	return new
 
 
-func validate():
-	if _adjectives.is_empty():
-		print(_noun, " has no adjectives")
-		remove_from_group("attributes")
-	
-	if _adjectives.size() == 1:
-		print(_noun, " has one adjectives")
-		remove_from_group("attributes")
+func validate() -> void:
+	if _adjectives.has("true"):
+		if not _adjectives.has("false"):
+			_adjectives.push_back("false")
+
+	if _adjectives.has("false"):
+		if not _adjectives.has("true"):
+			_adjectives.push_back("true")
