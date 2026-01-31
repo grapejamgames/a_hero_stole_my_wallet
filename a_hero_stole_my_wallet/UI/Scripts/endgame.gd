@@ -4,6 +4,7 @@ extends Control
 @onready var sure_label: Label = $Sure/VBoxContainer/Sure
 @onready var fail_container: PanelContainer = $Fail
 @onready var canvas_layer_2: CanvasLayer = $".."
+@onready var click: AudioStreamPlayer = $Click
 
 
 
@@ -22,10 +23,13 @@ func _on_examine_polaroid_endgame(name: String) -> void:
 
 
 func _on_yes_pressed() -> void:
+	click.play()
 	print("Yes")
+	#function to determine if you're right or wrong?
 
 
 func _on_no_pressed() -> void:
+	click.play()
 	print("No")
 	canvas_layer_2.hide()
 	sure_container.hide()

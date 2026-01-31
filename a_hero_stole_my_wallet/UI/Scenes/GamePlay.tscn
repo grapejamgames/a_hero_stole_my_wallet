@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://3qd81cpsdfnu" path="res://UI/Scripts/game_play.gd" id="1_82qy8"]
 [ext_resource type="PackedScene" uid="uid://cauvtfrainhwp" path="res://UI/Scenes/hero_headshot.tscn" id="1_wqapa"]
 [ext_resource type="Resource" uid="uid://c2mulx2tsjpuw" path="res://UI/HeroDescriptions/bear_description.tres" id="2_i2hf2"]
-[ext_resource type="PackedScene" uid="uid://c5pjhgm5hqma6" path="res://UI/Scenes/test_corkboard.tscn" id="2_vbmjt"]
+[ext_resource type="PackedScene" uid="uid://c5pjhgm5hqma6" path="res://UI/Scenes/corkboard.tscn" id="2_vbmjt"]
 [ext_resource type="Resource" uid="uid://cl5y6q110wdfb" path="res://UI/HeroDescriptions/tiffany_description.tres" id="3_82qy8"]
 [ext_resource type="Resource" uid="uid://p7s5v6sc41i8" path="res://UI/HeroDescriptions/margot_description.tres" id="3_i2hf2"]
 [ext_resource type="Resource" uid="uid://bs31333sgff6o" path="res://UI/HeroDescriptions/brittney_description.tres" id="4_0wac4"]
@@ -32,7 +32,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_82qy8")
 
-[node name="Panel" parent="." unique_id=1744485310 instance=ExtResource("2_vbmjt")]
+[node name="Corkboard" parent="." unique_id=1744485310 instance=ExtResource("2_vbmjt")]
 layout_mode = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=1885121217]

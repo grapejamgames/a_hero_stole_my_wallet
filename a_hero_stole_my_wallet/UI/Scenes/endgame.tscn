@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://cxrqfx35ufmy6"]
 
 [ext_resource type="Script" uid="uid://2t5cj5pgxx3x" path="res://UI/Scripts/endgame.gd" id="1_ovokl"]
+[ext_resource type="AudioStream" uid="uid://cwp7jfkht5857" path="res://Audio/jailDoor.mp3" id="2_cxej2"]
+[ext_resource type="AudioStream" uid="uid://bhd3rw7ehni51" path="res://Audio/click.mp3" id="2_ob1pv"]
+[ext_resource type="AudioStream" uid="uid://b3jm886kyeagd" path="res://Audio/failure.mp3" id="3_fxs7e"]
 
 [node name="Endgame" type="Control" unique_id=1164739181]
 layout_mode = 3
@@ -12,6 +15,7 @@ grow_vertical = 2
 script = ExtResource("1_ovokl")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1390381345]
+visible = false
 z_index = 1
 layout_mode = 1
 anchors_preset = 15
@@ -22,6 +26,7 @@ grow_vertical = 2
 color = Color(0.5370987, 0.5370987, 0.5370987, 0.5)
 
 [node name="Sure" type="PanelContainer" parent="." unique_id=1025527174]
+visible = false
 z_index = 2
 layout_mode = 1
 anchors_preset = 8
@@ -59,6 +64,7 @@ layout_mode = 2
 text = "Um..."
 
 [node name="Congrats" type="PanelContainer" parent="." unique_id=4811167]
+visible = false
 z_index = 2
 layout_mode = 1
 anchors_preset = 8
@@ -117,6 +123,15 @@ text = "Sorry, Detective."
 [node name="Label3" type="Label" parent="Fail/VBoxContainer" unique_id=149931868]
 layout_mode = 2
 text = "You failed to unmask the true villan."
+
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=1268364884]
+stream = ExtResource("2_ob1pv")
+
+[node name="Failure" type="AudioStreamPlayer" parent="." unique_id=1564896072]
+stream = ExtResource("3_fxs7e")
+
+[node name="JailDoor" type="AudioStreamPlayer" parent="." unique_id=1969176269]
+stream = ExtResource("2_cxej2")
 
 [connection signal="pressed" from="Sure/VBoxContainer/HBoxContainer/Yes" to="." method="_on_yes_pressed"]
 [connection signal="pressed" from="Sure/VBoxContainer/HBoxContainer/No" to="." method="_on_no_pressed"]
