@@ -5,8 +5,8 @@
 [ext_resource type="FontFile" uid="uid://lefwsk50kb8r" path="res://UI/Assets/Misc/ShantellSans-ExtraBold.ttf" id="2_h6jt3"]
 [ext_resource type="Script" uid="uid://fuxg58v6r2vv" path="res://start/main_menu/script_instruction_screen.gd" id="3_lidef"]
 [ext_resource type="Script" uid="uid://btute31tjt8fh" path="res://start/main_menu/script_menu_screen.gd" id="3_ufnfa"]
-[ext_resource type="AudioStream" uid="uid://bhd3rw7ehni51" path="res://Audio/click.mp3" id="4_y8e7h"]
-[ext_resource type="Script" uid="uid://c1b1d2psot4wq" path="res://start/main_menu/script_credits_screen.gd" id="5_lmn6c"]
+[ext_resource type="AudioStream" uid="uid://bhd3rw7ehni51" path="res://audio/click.mp3" id="4_y8e7h"]
+[ext_resource type="Script" path="res://start/main_menu/script_credits_screen.gd" id="5_lmn6c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7w4jk"]
 font = ExtResource("2_h6jt3")
@@ -117,21 +117,25 @@ script = ExtResource("5_lmn6c")
 custom_minimum_size = Vector2(600, 0)
 layout_mode = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1899040022]
-layout_mode = 2
-text = "Special thanks to Jon Bear for original gameplay concept"
-fit_content = true
-
-[node name="HSeparator" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1757303808]
-layout_mode = 2
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=861459162]
+[node name="RichTextLabel10" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=976073980]
 layout_mode = 2
 bbcode_enabled = true
-text = "Logo by [url=https://www.carlosrenepacheco.com/]Carlos Rene Pacheco[/url]"
+text = "Designed and Developed by:"
 fit_content = true
 
-[node name="HSeparator2" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=698031775]
+[node name="RichTextLabel11" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1014987994]
+layout_mode = 2
+bbcode_enabled = true
+text = "Chris - chris@calmatlas.com"
+fit_content = true
+
+[node name="RichTextLabel13" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1490451975]
+layout_mode = 2
+bbcode_enabled = true
+text = "Tam - brighidt@gmail.com"
+fit_content = true
+
+[node name="HSeparator4" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=2116785416]
 layout_mode = 2
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1204813483]
@@ -143,14 +147,30 @@ fit_content = true
 [node name="HSeparator3" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=368771690]
 layout_mode = 2
 
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1899040022]
+layout_mode = 2
+text = "Special thanks to Jon Bear for original gameplay concept"
+fit_content = true
+
+[node name="HSeparator" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1757303808]
+layout_mode = 2
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1188736049]
+layout_mode = 2
+text = "Made with Godot"
+fit_content = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=861459162]
+layout_mode = 2
+bbcode_enabled = true
+text = "Grape Jam Games Logo by [url=https://www.carlosrenepacheco.com/]Carlos Rene Pacheco[/url]"
+fit_content = true
+
 [node name="RichTextLabel4" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=803111245]
 layout_mode = 2
 bbcode_enabled = true
 text = "Mouse Click by [url=https://pixabay.com/users/universfield-28281460/]Universfield[/url] on [url=https://pixabay.com/]pixapay[/url]"
 fit_content = true
-
-[node name="HSeparator4" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=753312015]
-layout_mode = 2
 
 [node name="RichTextLabel5" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=438703035]
 layout_mode = 2
@@ -158,17 +178,11 @@ bbcode_enabled = true
 text = "Heroes created using [url=https://superherotar.framiq.com/en/build/]Superherotar[/url]"
 fit_content = true
 
-[node name="HSeparator5" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=772553908]
-layout_mode = 2
-
 [node name="RichTextLabel6" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=2097719345]
 layout_mode = 2
 bbcode_enabled = true
 text = "Pop art comic zooming lines expression background by [url=https://www.freepik.com/author/muhammad-abdullah]Muhammad.Abdullah[/url] on [url=https://www.freepik.com/]Freepik[/url]"
 fit_content = true
-
-[node name="HSeparator6" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1053103194]
-layout_mode = 2
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1851863250]
 layout_mode = 2
@@ -176,17 +190,17 @@ bbcode_enabled = true
 text = "Shantell Sans font from [url=https://fonts.google.com/]Google Fonts[/url] under the [url=https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL]Open Font License[/url]"
 fit_content = true
 
-[node name="HSeparator7" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1320798729]
-layout_mode = 2
-
 [node name="RichTextLabel8" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=205643654]
 layout_mode = 2
 bbcode_enabled = true
 text = "Jakob's Handwriting by [url=https://www.mistifonts.com/]Misti's Fonts[/url]"
 fit_content = true
 
-[node name="HSeparator8" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=888552500]
+[node name="RichTextLabel12" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=854665600]
 layout_mode = 2
+bbcode_enabled = true
+text = "Jail Door Image by [url=https://www.freepik.com/free-vector/prisoner-jail-bar-door-with-lock-design_136141846.htm]starline on Freepik[/url]"
+fit_content = true
 
 [node name="Back" type="Button" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1283217523]
 layout_mode = 2
@@ -219,8 +233,8 @@ stream = ExtResource("4_y8e7h")
 [connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="Panel/MenuScreen" method="_on_back_pressed"]
 [connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="Panel/InstructionsScreen" method="_on_back_pressed"]
-[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel2" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel3" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel2" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel4" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel5" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel6" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
