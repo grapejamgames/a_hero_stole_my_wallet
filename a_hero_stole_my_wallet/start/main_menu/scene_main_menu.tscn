@@ -5,7 +5,8 @@
 [ext_resource type="FontFile" uid="uid://lefwsk50kb8r" path="res://UI/Assets/Misc/ShantellSans-ExtraBold.ttf" id="2_h6jt3"]
 [ext_resource type="Script" uid="uid://fuxg58v6r2vv" path="res://start/main_menu/script_instruction_screen.gd" id="3_lidef"]
 [ext_resource type="Script" uid="uid://btute31tjt8fh" path="res://start/main_menu/script_menu_screen.gd" id="3_ufnfa"]
-[ext_resource type="AudioStream" uid="uid://bhd3rw7ehni51" path="res://audio/click.mp3" id="4_y8e7h"]
+[ext_resource type="AudioStream" uid="uid://bhd3rw7ehni51" path="res://Audio/click.mp3" id="4_y8e7h"]
+[ext_resource type="Script" uid="uid://c1b1d2psot4wq" path="res://start/main_menu/script_credits_screen.gd" id="5_lmn6c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7w4jk"]
 font = ExtResource("2_h6jt3")
@@ -102,6 +103,95 @@ layout_mode = 2
 layout_mode = 2
 text = "Back"
 
+[node name="CreditsScreen" type="CenterContainer" parent="Panel" unique_id=137145953]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_lmn6c")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CreditsScreen" unique_id=183592197]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1899040022]
+layout_mode = 2
+text = "Special thanks to Jon Bear for original gameplay concept"
+fit_content = true
+
+[node name="HSeparator" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1757303808]
+layout_mode = 2
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=861459162]
+layout_mode = 2
+bbcode_enabled = true
+text = "Logo by [url=https://www.carlosrenepacheco.com/]Carlos Rene Pacheco[/url]"
+fit_content = true
+
+[node name="HSeparator2" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=698031775]
+layout_mode = 2
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1204813483]
+layout_mode = 2
+bbcode_enabled = true
+text = "Original music by [url=https://open.spotify.com/artist/4JXpfcp9DAWADf5JQlMf6A?si=njv26lwVSuqD7YjHlpOVag]Jason Draper[/url]"
+fit_content = true
+
+[node name="HSeparator3" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=368771690]
+layout_mode = 2
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=803111245]
+layout_mode = 2
+bbcode_enabled = true
+text = "Mouse Click by [url=https://pixabay.com/users/universfield-28281460/]Universfield[/url] on [url=https://pixabay.com/]pixapay[/url]"
+fit_content = true
+
+[node name="HSeparator4" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=753312015]
+layout_mode = 2
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=438703035]
+layout_mode = 2
+bbcode_enabled = true
+text = "Heroes created using [url=https://superherotar.framiq.com/en/build/]Superherotar[/url]"
+fit_content = true
+
+[node name="HSeparator5" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=772553908]
+layout_mode = 2
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=2097719345]
+layout_mode = 2
+bbcode_enabled = true
+text = "Pop art comic zooming lines expression background by [url=https://www.freepik.com/author/muhammad-abdullah]Muhammad.Abdullah[/url] on [url=https://www.freepik.com/]Freepik[/url]"
+fit_content = true
+
+[node name="HSeparator6" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1053103194]
+layout_mode = 2
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1851863250]
+layout_mode = 2
+bbcode_enabled = true
+text = "Shantell Sans font from [url=https://fonts.google.com/]Google Fonts[/url] under the [url=https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL]Open Font License[/url]"
+fit_content = true
+
+[node name="HSeparator7" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1320798729]
+layout_mode = 2
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=205643654]
+layout_mode = 2
+bbcode_enabled = true
+text = "Jakob's Handwriting by [url=https://www.mistifonts.com/]Misti's Fonts[/url]"
+fit_content = true
+
+[node name="HSeparator8" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=888552500]
+layout_mode = 2
+
+[node name="Back" type="Button" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1283217523]
+layout_mode = 2
+text = "Back"
+
 [node name="Label" type="Label" parent="." unique_id=585761725]
 anchors_preset = 5
 anchor_left = 0.5
@@ -123,7 +213,19 @@ stream = ExtResource("4_y8e7h")
 [connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Instructions" to="Panel/InstructionsScreen" method="_on_instructions_pressed"]
 [connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Credits" to="Panel/MenuScreen" method="_on_credits_pressed"]
+[connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Credits" to="Panel/CreditsScreen" method="_on_credits_pressed"]
 [connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="Panel/MenuScreen" method="_on_back_pressed"]
 [connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="Panel/InstructionsScreen" method="_on_back_pressed"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel2" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel3" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel4" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel5" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel6" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel7" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel8" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="pressed" from="Panel/CreditsScreen/VBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Panel/CreditsScreen/VBoxContainer/Back" to="Panel/MenuScreen" method="_on_back_pressed"]
+[connection signal="pressed" from="Panel/CreditsScreen/VBoxContainer/Back" to="Panel/CreditsScreen" method="_on_back_pressed"]
