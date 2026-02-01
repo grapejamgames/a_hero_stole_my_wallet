@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="HeroDescription" format=3 uid="uid://blrdyq7vwxuuy"]
+
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://game_round/Resources/script_description_resource.gd" id="1_0c1vw"]
+[ext_resource type="Texture2D" uid="uid://f4aljj8ntp2a" path="res://ui/Assets/Art/chad_headshot.jpg" id="1_ju8k0"]
+[ext_resource type="Texture2D" uid="uid://cykvcotb2n8hn" path="res://ui/Assets/Art/chad.jpg" id="2_5fjje"]
+
+[resource]
+script = ExtResource("1_0c1vw")
+name = "Chad"
+picture = ExtResource("2_5fjje")
+headshot = ExtResource("1_ju8k0")
+hair_color = 1
+facial_hair = true
+mask = true
+cape = true
+pet = 2
+metadata/_custom_type_script = "uid://lmu125hxdee"

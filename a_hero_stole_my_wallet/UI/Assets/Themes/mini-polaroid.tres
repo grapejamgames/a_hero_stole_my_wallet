@@ -1,0 +1,17 @@
+[gd_resource type="Theme" format=3 uid="uid://bfje72be78mxf"]
+
+[ext_resource type="FontFile" uid="uid://c1iit16efiep1" path="res://ui/assets/Misc/JakobsHandwriting-Azep.ttf" id="1_qqj4h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5f3le"]
+bg_color = Color(1, 1, 1, 1)
+
+[resource]
+Label/colors/font_color = Color(0, 0, 0.735357, 1)
+Label/constants/line_spacing = 1
+Label/font_sizes/font_size = 24
+Label/fonts/font = ExtResource("1_qqj4h")
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 15
+MarginContainer/constants/margin_right = 15
+MarginContainer/constants/margin_top = 0
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_5f3le")

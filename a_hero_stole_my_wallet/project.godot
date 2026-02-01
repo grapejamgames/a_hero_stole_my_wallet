@@ -15,15 +15,14 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="A Hero Stole My Wallet"
-run/main_scene="uid://364m232n0qjy"
+run/main_scene="uid://8jmodeon57o8"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 config/main_scene=""
 
 [autoload]
 
-Adlibs="*res://autoload_adlibs.gd"
-Music="*res://Audio/scene_music.tscn"
+Adlibs="*res://autoload/autoload_adlibs.gd"
 
 [display]
 
@@ -40,6 +39,9 @@ project/assembly_name="A Hero Stole My Wallet"
 attributes=""
 heroes=""
 not_guilty=""
+filled_frames=""
+examine_container=""
+buttons=""
 
 [rendering]
 
