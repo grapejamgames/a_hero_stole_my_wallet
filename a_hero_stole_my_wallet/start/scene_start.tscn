@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://8jmodeon57o8"]
+
+[ext_resource type="PackedScene" uid="uid://bhmvlos3ng7x5" path="res://start/splash_screen/scene_splash_screen.tscn" id="1_ffsmj"]
+[ext_resource type="Script" uid="uid://d0v5gcmy08uqg" path="res://start/script_start.gd" id="1_og0dv"]
+[ext_resource type="Texture2D" uid="uid://cai2qr3o4w27f" path="res://start/start.png" id="1_q8ll1"]
+[ext_resource type="PackedScene" uid="uid://364m232n0qjy" path="res://start/main_menu/scene_main_menu.tscn" id="2_q8ll1"]
+[ext_resource type="Script" uid="uid://bvc7qx7dpxif3" path="res://start/script_start_button.gd" id="3_0xvpu"]
+
+[node name="Start" type="Control" unique_id=1127497675]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_og0dv")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=399393866]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -7.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1748982556]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 671.0
+offset_top = 236.0
+offset_right = -605.0
+offset_bottom = -240.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_q8ll1")
+script = ExtResource("3_0xvpu")
+
+[node name="SplashScreen" parent="." unique_id=1912081078 instance=ExtResource("1_ffsmj")]
+visible = false
+
+[node name="MainMenu" parent="." unique_id=1522712247 instance=ExtResource("2_q8ll1")]
+visible = false
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

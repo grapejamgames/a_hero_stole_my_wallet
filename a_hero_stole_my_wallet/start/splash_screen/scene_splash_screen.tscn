@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bhmvlos3ng7x5"]
+
+[ext_resource type="StyleBox" uid="uid://yv5fui7ic66m" path="res://ui/Assets/Themes/button_hover.tres" id="1_xgula"]
+[ext_resource type="StyleBox" uid="uid://dcmdpfbk6ohyl" path="res://ui/Assets/Themes/button_normal.tres" id="2_yuwp0"]
+[ext_resource type="StyleBox" uid="uid://di7tf7032vcgu" path="res://ui/Assets/Themes/button_press.tres" id="3_pjlmy"]
+[ext_resource type="FontFile" uid="uid://d3csvtcpgpg2j" path="res://ui/Assets/Misc/ShantellSans-Regular.ttf" id="4_nhi6b"]
+[ext_resource type="Texture2D" uid="uid://bi7kn70xcgvl5" path="res://start/splash_screen/logo.png" id="5_ik2ud"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6gcq"]
+bg_color = Color(0.011764706, 0, 0.023529412, 1)
+
+[sub_resource type="Theme" id="Theme_03l4t"]
+default_font = ExtResource("4_nhi6b")
+Button/colors/font_color = Color(0, 1, 1, 1)
+Button/colors/font_hover_color = Color(0, 1, 1, 1)
+Button/colors/font_pressed_color = Color(0, 1, 1, 1)
+Button/constants/outline_size = 3
+Button/font_sizes/font_size = 32
+Button/styles/hover = ExtResource("1_xgula")
+Button/styles/normal = ExtResource("2_yuwp0")
+Button/styles/pressed = ExtResource("3_pjlmy")
+Label/fonts/font = ExtResource("4_nhi6b")
+MarginContainer/constants/margin_top = 16
+Panel/styles/panel = SubResource("StyleBoxFlat_e6gcq")
+
+[node name="SplashScreen" type="CanvasLayer" unique_id=1912081078]
+
+[node name="Panel" type="Panel" parent="." unique_id=302788323]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_03l4t")
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel" unique_id=999518328]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer" unique_id=1981309407]
+layout_mode = 2
+texture = ExtResource("5_ik2ud")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1106510091]
+color = Color(1, 1, 1, 0)

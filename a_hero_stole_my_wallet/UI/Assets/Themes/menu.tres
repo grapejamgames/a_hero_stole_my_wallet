@@ -1,9 +1,9 @@
 [gd_resource type="Theme" format=3 uid="uid://32bppx0apu7n"]
 
-[ext_resource type="StyleBox" uid="uid://yv5fui7ic66m" path="res://UI/Themes/button_hover.tres" id="1_maob3"]
-[ext_resource type="FontFile" uid="uid://d3csvtcpgpg2j" path="res://UI/Misc/ShantellSans-Regular.ttf" id="2_maob3"]
-[ext_resource type="StyleBox" uid="uid://dcmdpfbk6ohyl" path="res://UI/Themes/button_normal.tres" id="2_pe1de"]
-[ext_resource type="StyleBox" uid="uid://di7tf7032vcgu" path="res://UI/Themes/button_press.tres" id="3_rmbb5"]
+[ext_resource type="StyleBox" uid="uid://yv5fui7ic66m" path="res://ui/Assets/Themes/button_hover.tres" id="1_maob3"]
+[ext_resource type="FontFile" uid="uid://d3csvtcpgpg2j" path="res://ui/Assets/Misc/ShantellSans-Regular.ttf" id="2_maob3"]
+[ext_resource type="StyleBox" uid="uid://dcmdpfbk6ohyl" path="res://ui/Assets/Themes/button_normal.tres" id="2_pe1de"]
+[ext_resource type="StyleBox" uid="uid://di7tf7032vcgu" path="res://ui/Assets/Themes/button_press.tres" id="3_rmbb5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6gcq"]
 bg_color = Color(1, 0.5370987, 0, 1)

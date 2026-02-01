@@ -15,7 +15,7 @@ func _process(_delta: float) -> void:
 func _on_play_pressed() -> void:
 	click.play()
 	await get_tree().create_timer(0.2).timeout
-	get_tree().change_scene_to_file("res://start/main_alt.tscn")
+	get_tree().change_scene_to_file("res://scene_game.tscn")
 
 
 func _on_settings_pressed() -> void:
