@@ -13,10 +13,14 @@ var correct_answer : bool
 func _on_yes_pressed() -> void:
 	hero_chosen.emit()
 	sure_container.hide()
+	$Result.show()
+	if main:
+		$Result/Hero.texture = main.guilty_hero.get_resource().picture
 	if correct_answer:
-		congrats_container.show()
+		$Result/JailBars.show()
+		$Result/Congrats.show()
 	else:
-		fail_container.show()
+		$Result/Fail.show()
 
 
 func _on_no_pressed() -> void:
