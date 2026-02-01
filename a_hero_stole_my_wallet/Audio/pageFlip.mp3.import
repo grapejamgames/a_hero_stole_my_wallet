@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://hrkl7k7lx0i8"
-path="res://.godot/imported/pageFlip.mp3-350a848a38281b415f058d8919426acb.mp3str"
+path="res://.godot/imported/pageFlip.mp3-055324247fef937033350e4b27672aac.mp3str"
 
 [deps]
 
-source_file="res://Audio/pageFlip.mp3"
-dest_files=["res://.godot/imported/pageFlip.mp3-350a848a38281b415f058d8919426acb.mp3str"]
+source_file="res://audio/pageFlip.mp3"
+dest_files=["res://.godot/imported/pageFlip.mp3-055324247fef937033350e4b27672aac.mp3str"]
 
 [params]
 

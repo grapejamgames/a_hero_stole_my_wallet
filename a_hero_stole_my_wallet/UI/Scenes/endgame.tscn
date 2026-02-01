@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cxrqfx35ufmy6"]
 
-[ext_resource type="Script" uid="uid://2t5cj5pgxx3x" path="res://UI/Scripts/endgame.gd" id="1_ovokl"]
-[ext_resource type="AudioStream" uid="uid://cwp7jfkht5857" path="res://Audio/jailDoor.mp3" id="2_cxej2"]
-[ext_resource type="AudioStream" uid="uid://bhd3rw7ehni51" path="res://Audio/click.mp3" id="2_ob1pv"]
-[ext_resource type="AudioStream" uid="uid://b3jm886kyeagd" path="res://Audio/failure.mp3" id="3_fxs7e"]
+[ext_resource type="Script" uid="uid://2t5cj5pgxx3x" path="res://ui/Scripts/endgame.gd" id="1_ovokl"]
+[ext_resource type="AudioStream" uid="uid://cwp7jfkht5857" path="res://audio/jailDoor.mp3" id="2_cxej2"]
+[ext_resource type="AudioStream" uid="uid://bhd3rw7ehni51" path="res://audio/click.mp3" id="2_ob1pv"]
+[ext_resource type="AudioStream" uid="uid://b3jm886kyeagd" path="res://audio/failure.mp3" id="3_fxs7e"]
 
 [node name="Endgame" type="Control" unique_id=1164739181]
 layout_mode = 3
@@ -15,7 +15,6 @@ grow_vertical = 2
 script = ExtResource("1_ovokl")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1390381345]
-visible = false
 z_index = 1
 layout_mode = 1
 anchors_preset = 15
@@ -26,7 +25,6 @@ grow_vertical = 2
 color = Color(0.5370987, 0.5370987, 0.5370987, 0.5)
 
 [node name="Sure" type="PanelContainer" parent="." unique_id=1025527174]
-visible = false
 z_index = 2
 layout_mode = 1
 anchors_preset = 8
@@ -95,6 +93,7 @@ layout_mode = 2
 text = "You have unmasked the culprit!"
 
 [node name="Fail" type="PanelContainer" parent="." unique_id=31542911]
+visible = false
 z_index = 2
 layout_mode = 1
 anchors_preset = 8

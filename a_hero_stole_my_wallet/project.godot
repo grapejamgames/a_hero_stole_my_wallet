@@ -23,7 +23,6 @@ config/main_scene=""
 [autoload]
 
 Adlibs="*res://autoload_adlibs.gd"
-Music="*res://Audio/scene_music.tscn"
 
 [display]
 
@@ -42,6 +41,7 @@ heroes=""
 not_guilty=""
 filled_frames=""
 examine_container=""
+buttons=""
 
 [rendering]
 

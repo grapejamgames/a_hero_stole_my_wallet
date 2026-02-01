@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dyqyg2x0ob4ks"]
 
-[ext_resource type="Theme" uid="uid://cnwpo35j36tgu" path="res://UI/Themes/polaroid.tres" id="1_5pjff"]
-[ext_resource type="Script" uid="uid://dd3obdx5fpkal" path="res://UI/Scripts/polaroid.gd" id="1_e53mb"]
-[ext_resource type="Texture2D" uid="uid://d0co6wdgsrtl7" path="res://UI/Art/brittney.jpg" id="2_dp1xy"]
+[ext_resource type="Theme" uid="uid://cnwpo35j36tgu" path="res://ui/assets/Themes/polaroid.tres" id="1_5pjff"]
+[ext_resource type="Script" uid="uid://dd3obdx5fpkal" path="res://ui/Scripts/polaroid.gd" id="1_e53mb"]
+[ext_resource type="Texture2D" uid="uid://d0co6wdgsrtl7" path="res://ui/assets/Art/brittney.jpg" id="2_dp1xy"]
 
 [node name="VBoxContainer" type="VBoxContainer" unique_id=1749446485]
 top_level = true

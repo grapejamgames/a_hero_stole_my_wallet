@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="HeroDescription" format=3 uid="uid://cl5y6q110wdfb"]
 
-[ext_resource type="Texture2D" uid="uid://bcn0l2gq8u5uc" path="res://UI/Art/tiffany_headshot.jpg" id="1_p3b5f"]
-[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://UI/Scripts/hero_descriptors_resource.gd" id="1_uf5b0"]
-[ext_resource type="Texture2D" uid="uid://7243nrm7bl7p" path="res://UI/Art/tiffany.jpg" id="2_8n6b0"]
+[ext_resource type="Texture2D" uid="uid://bcn0l2gq8u5uc" path="res://ui/assets/Art/tiffany_headshot.jpg" id="1_p3b5f"]
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://ui/Scripts/hero_descriptors_resource.gd" id="1_uf5b0"]
+[ext_resource type="Texture2D" uid="uid://7243nrm7bl7p" path="res://ui/assets/Art/tiffany.jpg" id="2_8n6b0"]
 
 [resource]
 script = ExtResource("1_uf5b0")

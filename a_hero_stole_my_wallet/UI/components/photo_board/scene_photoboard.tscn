@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dkinli6l83ccb"]
+
+[ext_resource type="PackedScene" uid="uid://c5pjhgm5hqma6" path="res://ui/components/photo_board/scene_corkboard.tscn" id="2_sn38j"]
+[ext_resource type="PackedScene" uid="uid://bqbi47bv6ga47" path="res://ui/components/photo_board/scene_row_polaroids.tscn" id="3_05t7u"]
+
+[node name="PhotoBoard" type="Control" unique_id=1128146794]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Panel" parent="." unique_id=1744485310 instance=ExtResource("2_sn38j")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 94.0
+offset_top = 40.0
+offset_right = 1794.0
+offset_bottom = 1045.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Control" type="Control" parent="." unique_id=1900545511]
+anchors_preset = 0
+offset_left = 186.0
+offset_top = 420.0
+offset_right = 226.0
+offset_bottom = 460.0
+scale = Vector2(0.44000104, 0.44000104)
+
+[node name="Row" parent="Control" unique_id=848724786 instance=ExtResource("3_05t7u")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 13.636337
+offset_top = -706.8165
+offset_right = 13.636337
+offset_bottom = -706.8165
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Row2" parent="Control" unique_id=455177484 instance=ExtResource("3_05t7u")]
+layout_mode = 1
+offset_left = 9.090902
+offset_top = 56.818
+offset_right = 9.410728
+offset_bottom = 56.697887

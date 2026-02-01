@@ -9,7 +9,7 @@ extends Container
 var statement : String = "I don't know anything"
 var hero : Node
 
-signal hide_grid
+signal click
 signal examine_polaroid(name_string: String, picture: Texture, statement: String)
 signal hero_assigned
 
@@ -30,7 +30,7 @@ func _on_gui_input(event: InputEvent) -> void:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
 			#print("A click happened!")
 			examine_polaroid.emit(hero_description.name, hero_description.picture, statement)
-			emit_signal("hide_grid")
+			emit_signal("click")
 
 
 func assign_random_hero() -> void:

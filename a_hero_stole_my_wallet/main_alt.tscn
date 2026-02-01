@@ -1,27 +1,18 @@
 [gd_scene format=3 uid="uid://djrm7fcwcrta8"]
 
-[ext_resource type="Script" uid="uid://f5fb3iaioq4k" path="res://script_main.gd" id="1_a0psn"]
-[ext_resource type="Script" uid="uid://cs77hfik1qnn" path="res://UI/Scripts/script_ui.gd" id="2_a5yag"]
-[ext_resource type="PackedScene" uid="uid://dkinli6l83ccb" path="res://UI/Scenes/scene_board.tscn" id="2_d4e8j"]
+[ext_resource type="Script" uid="uid://chbughri2qhka" path="res://script_main_alt.gd" id="1_a0psn"]
+[ext_resource type="PackedScene" uid="uid://cyyevt10ckbda" path="res://ui/scene_ui.tscn" id="2_a0psn"]
 [ext_resource type="PackedScene" uid="uid://bm45ri5483juc" path="res://game_round/scene_game_round.tscn" id="3_a5yag"]
-[ext_resource type="PackedScene" uid="uid://dqrujdj64sr8g" path="res://UI/Scenes/examine_screen.tscn" id="3_q8a8k"]
 [ext_resource type="PackedScene" uid="uid://1b20s5oiummp" path="res://Debug/debug.tscn" id="4_8hjuj"]
+[ext_resource type="PackedScene" uid="uid://cf713qnsyypuf" path="res://audio/scene_music.tscn" id="5_q8a8k"]
 
 [node name="Main" type="Node" unique_id=525078708]
 script = ExtResource("1_a0psn")
 
-[node name="UI" type="Control" parent="." unique_id=245369709]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("2_a5yag")
-
-[node name="PhotoBoard" parent="UI" unique_id=1128146794 instance=ExtResource("2_d4e8j")]
-layout_mode = 0
-
-[node name="ExamineScreen" parent="UI" unique_id=1835710725 instance=ExtResource("3_q8a8k")]
-visible = false
-layout_mode = 1
+[node name="UI" parent="." unique_id=1478943287 instance=ExtResource("2_a0psn")]
 
 [node name="GameRound" parent="." unique_id=143726411 instance=ExtResource("3_a5yag")]
 
 [node name="Debug" parent="." unique_id=594129894 instance=ExtResource("4_8hjuj")]
+
+[node name="Music" parent="." unique_id=1886973568 instance=ExtResource("5_q8a8k")]

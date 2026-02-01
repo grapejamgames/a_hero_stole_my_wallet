@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cyyevt10ckbda"]
+
+[ext_resource type="Script" uid="uid://cs77hfik1qnn" path="res://ui/script_ui.gd" id="1_oaw1t"]
+[ext_resource type="PackedScene" uid="uid://dkinli6l83ccb" path="res://ui/components/photo_board/scene_photoboard.tscn" id="2_d7bnh"]
+[ext_resource type="PackedScene" uid="uid://dqrujdj64sr8g" path="res://ui/components/examine/scene_examine.tscn" id="3_dprbr"]
+[ext_resource type="PackedScene" uid="uid://c1j8eo64013gj" path="res://ui/components/endgame/scene_endgame.tscn" id="4_djpij"]
+[ext_resource type="PackedScene" uid="uid://njuys68k1h8c" path="res://audio/scene_sounds.tscn" id="5_8o85j"]
+
+[node name="UI" type="Control" unique_id=1478943287]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_oaw1t")
+
+[node name="PhotoBoard" parent="." unique_id=1128146794 instance=ExtResource("2_d7bnh")]
+z_index = -1
+layout_mode = 0
+
+[node name="ExamineScreen" parent="." unique_id=1835710725 instance=ExtResource("3_dprbr")]
+visible = false
+layout_mode = 1
+
+[node name="Endgame" parent="." unique_id=1164739181 instance=ExtResource("4_djpij")]
+visible = false
+z_index = 2
+layout_mode = 1
+
+[node name="Sounds" parent="." unique_id=1690235499 instance=ExtResource("5_8o85j")]

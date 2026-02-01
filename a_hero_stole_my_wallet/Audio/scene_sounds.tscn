@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://njuys68k1h8c"]
+
+[ext_resource type="AudioStream" uid="uid://bhd3rw7ehni51" path="res://audio/click.mp3" id="1_0ipb1"]
+[ext_resource type="AudioStream" uid="uid://hrkl7k7lx0i8" path="res://audio/pageFlip.mp3" id="2_bvvpp"]
+[ext_resource type="AudioStream" uid="uid://b3jm886kyeagd" path="res://audio/failure.mp3" id="2_d24pg"]
+[ext_resource type="AudioStream" uid="uid://cwp7jfkht5857" path="res://audio/jailDoor.mp3" id="3_bvvpp"]
+
+[node name="Sounds" type="Node" unique_id=1690235499]
+
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=49847093]
+stream = ExtResource("1_0ipb1")
+
+[node name="PageFlip" type="AudioStreamPlayer" parent="." unique_id=134865598]
+stream = ExtResource("2_bvvpp")
+
+[node name="Failure" type="AudioStreamPlayer" parent="." unique_id=1651330148]
+stream = ExtResource("2_d24pg")
+
+[node name="JailDoor" type="AudioStreamPlayer" parent="." unique_id=1265502947]
+stream = ExtResource("3_bvvpp")

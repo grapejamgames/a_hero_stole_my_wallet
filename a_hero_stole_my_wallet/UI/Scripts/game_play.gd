@@ -15,7 +15,7 @@ func _process(_delta: float) -> void:
 	pass
 
 
-func _on_hero_headshot_hide_grid() -> void:
+func _on_hero_headshot_click() -> void:
 	#print("gameplay control at work")
 	center_container.hide()
 	center_container_2.show()

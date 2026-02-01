@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="HeroDescription" format=3 uid="uid://c2mulx2tsjpuw"]
 
-[ext_resource type="Texture2D" uid="uid://cbsifi6231b2i" path="res://UI/Art/bear_headshot.jpg" id="1_j2u6i"]
-[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://UI/Scripts/hero_descriptors_resource.gd" id="1_kgnmx"]
-[ext_resource type="Texture2D" uid="uid://4iqnewjmoue0" path="res://UI/Art/bear.jpg" id="2_4qidg"]
+[ext_resource type="Texture2D" uid="uid://cbsifi6231b2i" path="res://ui/assets/Art/bear_headshot.jpg" id="1_j2u6i"]
+[ext_resource type="Script" uid="uid://lmu125hxdee" path="res://ui/Scripts/hero_descriptors_resource.gd" id="1_kgnmx"]
+[ext_resource type="Texture2D" uid="uid://4iqnewjmoue0" path="res://ui/assets/Art/bear.jpg" id="2_4qidg"]
 
 [resource]
 script = ExtResource("1_kgnmx")
