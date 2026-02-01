@@ -3,8 +3,9 @@
 [ext_resource type="Script" uid="uid://bdfqbcih3rufq" path="res://start/main_menu/script_main_menu.gd" id="1_2oafp"]
 [ext_resource type="Theme" uid="uid://32bppx0apu7n" path="res://UI/Assets/Themes/menu.tres" id="1_2sit6"]
 [ext_resource type="FontFile" uid="uid://lefwsk50kb8r" path="res://UI/Assets/Misc/ShantellSans-ExtraBold.ttf" id="2_h6jt3"]
-[ext_resource type="Theme" uid="uid://db85wvkjn84uy" path="res://UI/Assets/Themes/credits.tres" id="3_lidef"]
-[ext_resource type="AudioStream" uid="uid://bhd3rw7ehni51" path="res://Audio/click.mp3" id="4_y8e7h"]
+[ext_resource type="Script" uid="uid://fuxg58v6r2vv" path="res://start/main_menu/script_instruction_screen.gd" id="3_lidef"]
+[ext_resource type="Script" uid="uid://btute31tjt8fh" path="res://start/main_menu/script_menu_screen.gd" id="3_ufnfa"]
+[ext_resource type="AudioStream" uid="uid://bhd3rw7ehni51" path="res://audio/click.mp3" id="4_y8e7h"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7w4jk"]
 font = ExtResource("2_h6jt3")
@@ -26,144 +27,80 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_2sit6")
 
-[node name="CenterContainer" type="CenterContainer" parent="Panel" unique_id=999518328]
+[node name="MenuScreen" type="CenterContainer" parent="Panel" unique_id=999518328]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("3_ufnfa")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer" unique_id=292131763]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MenuScreen" unique_id=292131763]
 layout_mode = 2
 
-[node name="Play" type="Button" parent="Panel/CenterContainer/VBoxContainer" unique_id=2141771348]
+[node name="Instructions" type="Button" parent="Panel/MenuScreen/VBoxContainer" unique_id=1017449853]
+layout_mode = 2
+text = "Instructions"
+
+[node name="HSeparator" type="HSeparator" parent="Panel/MenuScreen/VBoxContainer" unique_id=1004443684]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="Panel/MenuScreen/VBoxContainer" unique_id=2141771348]
 layout_mode = 2
 text = "Play"
 
-[node name="HSeparator" type="HSeparator" parent="Panel/CenterContainer/VBoxContainer" unique_id=1004443684]
+[node name="HSeparator2" type="HSeparator" parent="Panel/MenuScreen/VBoxContainer" unique_id=94701896]
 layout_mode = 2
 
-[node name="Credits" type="Button" parent="Panel/CenterContainer/VBoxContainer" unique_id=542912776]
+[node name="Credits" type="Button" parent="Panel/MenuScreen/VBoxContainer" unique_id=542912776]
 layout_mode = 2
 text = "Credits"
 
-[node name="HSeparator2" type="HSeparator" parent="Panel/CenterContainer/VBoxContainer" unique_id=94701896]
+[node name="HSeparator3" type="HSeparator" parent="Panel/MenuScreen/VBoxContainer" unique_id=384991849]
 layout_mode = 2
 
-[node name="Quit" type="Button" parent="Panel/CenterContainer/VBoxContainer" unique_id=398248852]
+[node name="Quit" type="Button" parent="Panel/MenuScreen/VBoxContainer" unique_id=398248852]
 layout_mode = 2
 text = "Quit"
 
-[node name="Credits" type="CanvasLayer" parent="Panel" unique_id=457228027]
-layer = 2
-
-[node name="Panel" type="Panel" parent="Panel/Credits" unique_id=837451498]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("3_lidef")
-
-[node name="CenterContainer" type="CenterContainer" parent="Panel/Credits/Panel" unique_id=1705097879]
+[node name="InstructionsScreen" type="CenterContainer" parent="Panel" unique_id=1803102074]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("3_lidef")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/Credits/Panel/CenterContainer" unique_id=526286348]
-custom_minimum_size = Vector2(600, 800)
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/InstructionsScreen" unique_id=2055759421]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=1986254758]
+[node name="Instructions" type="Label" parent="Panel/InstructionsScreen/VBoxContainer" unique_id=257951114]
 layout_mode = 2
-text = "Credits"
-horizontal_alignment = 1
+text = "Those pesky superheroes were throwing a party when one of them stole my wallet."
 
-[node name="HSeparator" type="HSeparator" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=280874284]
-layout_mode = 2
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=121875274]
-layout_mode = 2
-text = "Special thanks to Jon Bear for the original gameplay idea."
-fit_content = true
-
-[node name="HSeparator2" type="HSeparator" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=1087147627]
+[node name="HSeparator" type="HSeparator" parent="Panel/InstructionsScreen/VBoxContainer" unique_id=1390914291]
 layout_mode = 2
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=637629319]
+[node name="Instructions2" type="Label" parent="Panel/InstructionsScreen/VBoxContainer" unique_id=1277178867]
 layout_mode = 2
-bbcode_enabled = true
-text = "Logo by [url=https://www.carlosrenepacheco.com/]Carlos Rene Pacheo[/url]"
-fit_content = true
+text = "Question the heroes. Everyone is telling the truth except the guilty hero."
 
-[node name="HSeparator3" type="HSeparator" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=1419261527]
+[node name="HSeparator2" type="HSeparator" parent="Panel/InstructionsScreen/VBoxContainer" unique_id=141638736]
 layout_mode = 2
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=474224860]
+[node name="Instructions3" type="Label" parent="Panel/InstructionsScreen/VBoxContainer" unique_id=1977783054]
 layout_mode = 2
-bbcode_enabled = true
-text = "Original music by [url=https://open.spotify.com/artist/4JXpfcp9DAWADf5JQlMf6A?si=njv26lwVSuqD7YjHlpOVag]Jason Draper[/url]"
-fit_content = true
+text = "It's your job, Detective, to unmask the culprit. Good Luck!"
 
-[node name="HSeparator4" type="HSeparator" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=1884477546]
+[node name="HSeparator3" type="HSeparator" parent="Panel/InstructionsScreen/VBoxContainer" unique_id=509558578]
 layout_mode = 2
 
-[node name="RichTextLabel4" type="RichTextLabel" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=497241318]
+[node name="Back" type="Button" parent="Panel/InstructionsScreen/VBoxContainer" unique_id=1155446377]
 layout_mode = 2
-bbcode_enabled = true
-text = "Click sound by [url=https://pixabay.com/users/universfield-28281460/]Universfield[/url]"
-fit_content = true
-
-[node name="HSeparator5" type="HSeparator" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=242646257]
-layout_mode = 2
-
-[node name="RichTextLabel5" type="RichTextLabel" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=1220026506]
-layout_mode = 2
-bbcode_enabled = true
-text = "Heroes created using [url=https://superherotar.framiq.com/en/build/]Superherotar[/url]"
-fit_content = true
-
-[node name="HSeparator6" type="HSeparator" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=1015993570]
-layout_mode = 2
-
-[node name="RichTextLabel6" type="RichTextLabel" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=686751505]
-layout_mode = 2
-bbcode_enabled = true
-text = "Pop art comic zooming lines expression background by [url=https://www.freepik.com/author/muhammad-abdullah]muhammad.abdulla[/url] on [url=www.freepik.com]Freepik[/url]"
-fit_content = true
-
-[node name="HSeparator7" type="HSeparator" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=1972431791]
-layout_mode = 2
-
-[node name="RichTextLabel7" type="RichTextLabel" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=2077205658]
-layout_mode = 2
-bbcode_enabled = true
-text = "Shantell Sans font from [url=https://fonts.google.com/]Google Fonts[/url] under the [url=https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL]Open Font License[/url]"
-fit_content = true
-
-[node name="HSeparator8" type="HSeparator" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=350491516]
-layout_mode = 2
-
-[node name="RichTextLabel8" type="RichTextLabel" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=1533294098]
-layout_mode = 2
-bbcode_enabled = true
-text = "Jakob's Handwriting by [url=https://mistifonts.com/]Misti's Fonts[/url]"
-fit_content = true
-
-[node name="HSeparator9" type="HSeparator" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=165860151]
-layout_mode = 2
-
-[node name="HSeparator10" type="HSeparator" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=809085042]
-layout_mode = 2
-
-[node name="Return" type="Button" parent="Panel/Credits/Panel/CenterContainer/VBoxContainer" unique_id=1834877172]
-layout_mode = 2
-text = "Return to Main Menu
-"
+text = "Back"
 
 [node name="Label" type="Label" parent="." unique_id=585761725]
 anchors_preset = 5
@@ -181,7 +118,12 @@ horizontal_alignment = 1
 [node name="Click" type="AudioStreamPlayer" parent="." unique_id=802262706]
 stream = ExtResource("4_y8e7h")
 
-[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
-[connection signal="pressed" from="Panel/Credits/Panel/CenterContainer/VBoxContainer/Return" to="." method="_on_return_pressed"]
+[connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Instructions" to="." method="_on_instructions_pressed"]
+[connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Instructions" to="Panel/MenuScreen" method="_on_instructions_pressed"]
+[connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Instructions" to="Panel/InstructionsScreen" method="_on_instructions_pressed"]
+[connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Panel/MenuScreen/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="Panel/MenuScreen" method="_on_back_pressed"]
+[connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="Panel/InstructionsScreen" method="_on_back_pressed"]

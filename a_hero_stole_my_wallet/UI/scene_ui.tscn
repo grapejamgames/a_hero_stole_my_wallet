@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://dqrujdj64sr8g" path="res://UI/components/examine/scene_examine.tscn" id="3_dprbr"]
 [ext_resource type="PackedScene" uid="uid://c1j8eo64013gj" path="res://UI/components/endgame/scene_endgame.tscn" id="4_djpij"]
 [ext_resource type="PackedScene" uid="uid://njuys68k1h8c" path="res://audio/scene_sounds.tscn" id="5_8o85j"]
-[ext_resource type="PackedScene" uid="uid://b35gp4wrpymqh" path="res://audio/scene_music_control.tscn" id="6_vqk3s"]
 
 [node name="UI" type="Control" unique_id=1478943287]
 layout_mode = 3
@@ -26,12 +25,5 @@ z_index = 2
 layout_mode = 1
 
 [node name="Sounds" parent="." unique_id=1690235499 instance=ExtResource("5_8o85j")]
-
-[node name="MusicControl" parent="." unique_id=394259861 instance=ExtResource("6_vqk3s")]
-layout_mode = 0
-offset_left = 1625.0
-offset_top = 64.0
-offset_right = 1770.0
-offset_bottom = 113.0
 
 [connection signal="endgame_check" from="ExamineScreen" to="Endgame" method="_on_examine_screen_endgame_check"]

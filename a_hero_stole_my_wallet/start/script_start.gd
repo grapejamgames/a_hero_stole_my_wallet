@@ -4,6 +4,7 @@ extends Control
 @export var wait_time : float = 5
 
 func _on_texture_button_pressed() -> void:
+	Music.play()
 	$SplashScreen/CanvasModulate.color = Color(1.0, 1.0, 1.0, 0.0)
 	$SplashScreen.visible = true
 	var tween = get_tree().create_tween()

@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cyyevt10ckbda" path="res://UI/scene_ui.tscn" id="2_a0psn"]
 [ext_resource type="PackedScene" uid="uid://bm45ri5483juc" path="res://game_round/scene_game_round.tscn" id="3_a5yag"]
 [ext_resource type="Script" uid="uid://c8skef8khtb6t" path="res://UI/components/endgame/script_playagain_button.gd" id="4_jromk"]
+[ext_resource type="PackedScene" uid="uid://b35gp4wrpymqh" path="res://audio/scene_music_control.tscn" id="5_h7krh"]
 
 [node name="Main" type="Node" unique_id=525078708]
 script = ExtResource("1_a0psn")
@@ -12,7 +13,7 @@ script = ExtResource("1_a0psn")
 
 [node name="GameRound" parent="." unique_id=143726411 instance=ExtResource("3_a5yag")]
 
-[node name="Button" type="Button" parent="." unique_id=1887904525]
+[node name="Restart" type="Button" parent="." unique_id=1887904525]
 z_index = 2
 offset_left = 1627.0
 offset_top = 979.0
@@ -21,4 +22,10 @@ offset_bottom = 1024.0
 text = "Restart"
 script = ExtResource("4_jromk")
 
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[node name="MusicControl" parent="." unique_id=394259861 instance=ExtResource("5_h7krh")]
+offset_left = 1625.0
+offset_top = 64.0
+offset_right = 1770.0
+offset_bottom = 113.0
+
+[connection signal="pressed" from="Restart" to="Restart" method="_on_pressed"]
