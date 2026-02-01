@@ -109,6 +109,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -3180.0
+offset_bottom = 3248.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("5_lmn6c")
@@ -172,6 +174,9 @@ bbcode_enabled = true
 text = "Mouse Click by [url=https://pixabay.com/users/universfield-28281460/]Universfield[/url] on [url=https://pixabay.com/]pixapay[/url]"
 fit_content = true
 
+[node name="HSeparator4" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=753312015]
+layout_mode = 2
+
 [node name="RichTextLabel5" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=438703035]
 layout_mode = 2
 bbcode_enabled = true
@@ -183,6 +188,9 @@ layout_mode = 2
 bbcode_enabled = true
 text = "Pop art comic zooming lines expression background by [url=https://www.freepik.com/author/muhammad-abdullah]Muhammad.Abdullah[/url] on [url=https://www.freepik.com/]Freepik[/url]"
 fit_content = true
+
+[node name="HSeparator6" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1053103194]
+layout_mode = 2
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1851863250]
 layout_mode = 2
@@ -236,8 +244,10 @@ stream = ExtResource("4_y8e7h")
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel3" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel2" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel4" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel10" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel5" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel6" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel9" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel7" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel8" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="pressed" from="Panel/CreditsScreen/VBoxContainer/Back" to="." method="_on_back_pressed"]
