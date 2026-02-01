@@ -1,0 +1,23 @@
+[gd_resource type="Theme" format=3 uid="uid://32bppx0apu7n"]
+
+[ext_resource type="StyleBox" uid="uid://yv5fui7ic66m" path="res://UI/Themes/button_hover.tres" id="1_maob3"]
+[ext_resource type="FontFile" uid="uid://d3csvtcpgpg2j" path="res://UI/Misc/ShantellSans-Regular.ttf" id="2_maob3"]
+[ext_resource type="StyleBox" uid="uid://dcmdpfbk6ohyl" path="res://UI/Themes/button_normal.tres" id="2_pe1de"]
+[ext_resource type="StyleBox" uid="uid://di7tf7032vcgu" path="res://UI/Themes/button_press.tres" id="3_rmbb5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6gcq"]
+bg_color = Color(1, 0.5370987, 0, 1)
+
+[resource]
+default_font = ExtResource("2_maob3")
+Button/colors/font_color = Color(0, 1, 1, 1)
+Button/colors/font_hover_color = Color(0, 1, 1, 1)
+Button/colors/font_pressed_color = Color(0, 1, 1, 1)
+Button/constants/outline_size = 3
+Button/font_sizes/font_size = 32
+Button/styles/hover = ExtResource("1_maob3")
+Button/styles/normal = ExtResource("2_pe1de")
+Button/styles/pressed = ExtResource("3_rmbb5")
+Label/fonts/font = ExtResource("2_maob3")
+MarginContainer/constants/margin_top = 16
+Panel/styles/panel = SubResource("StyleBoxFlat_e6gcq")
