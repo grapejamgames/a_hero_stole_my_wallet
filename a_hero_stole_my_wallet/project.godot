@@ -22,8 +22,9 @@ config/main_scene=""
 
 [autoload]
 
-Adlibs="*res://autoload/autoload_adlibs.gd"
+Adlibs="*res://game_round/components/autoload_adlibs.gd"
 Music="*uid://cf713qnsyypuf"
+Sounds="*uid://njuys68k1h8c"
 
 [display]
 

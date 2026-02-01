@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b35gp4wrpymqh"]
 
-[ext_resource type="Script" uid="uid://bdlcsmma5n0dk" path="res://audio/script_music_control.gd" id="1_dsv8s"]
+[ext_resource type="Script" uid="uid://bdlcsmma5n0dk" path="res://components/script_music_control.gd" id="1_dsv8s"]
 
 [node name="MusicControl" type="ColorRect" unique_id=394259861]
 offset_right = 145.0

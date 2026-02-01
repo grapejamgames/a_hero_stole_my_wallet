@@ -29,7 +29,6 @@ func _on_hero_chosen() -> void:
 		var guilty_hero = main.guilty_hero.name
 		var chosen_hero = main.chosen_hero
 
-		print(guilty_hero, ", ", chosen_hero)
 		$Endgame.correct_answer = guilty_hero == chosen_hero
 
 

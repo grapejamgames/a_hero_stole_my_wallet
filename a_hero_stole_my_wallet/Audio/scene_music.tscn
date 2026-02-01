@@ -6,3 +6,4 @@
 stream = ExtResource("1_452hj")
 volume_db = -10.0
 playback_type = 1
+parameters/looping = true
