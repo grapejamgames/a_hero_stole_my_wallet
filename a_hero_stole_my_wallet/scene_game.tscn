@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://djrm7fcwcrta8"]
 
 [ext_resource type="Script" uid="uid://chbughri2qhka" path="res://script_game.gd" id="1_a0psn"]
-[ext_resource type="PackedScene" uid="uid://cyyevt10ckbda" path="res://ui/scene_ui.tscn" id="2_a0psn"]
+[ext_resource type="PackedScene" uid="uid://cyyevt10ckbda" path="res://UI/scene_ui.tscn" id="2_a0psn"]
 [ext_resource type="PackedScene" uid="uid://bm45ri5483juc" path="res://game_round/scene_game_round.tscn" id="3_a5yag"]
-[ext_resource type="PackedScene" uid="uid://1b20s5oiummp" path="res://Debug/debug.tscn" id="4_8hjuj"]
-[ext_resource type="PackedScene" uid="uid://cf713qnsyypuf" path="res://audio/scene_music.tscn" id="5_q8a8k"]
+[ext_resource type="Script" uid="uid://c8skef8khtb6t" path="res://UI/components/endgame/script_playagain_button.gd" id="4_jromk"]
 
 [node name="Main" type="Node" unique_id=525078708]
 script = ExtResource("1_a0psn")
@@ -13,6 +12,13 @@ script = ExtResource("1_a0psn")
 
 [node name="GameRound" parent="." unique_id=143726411 instance=ExtResource("3_a5yag")]
 
-[node name="Debug" parent="." unique_id=594129894 instance=ExtResource("4_8hjuj")]
+[node name="Button" type="Button" parent="." unique_id=1887904525]
+z_index = 2
+offset_left = 1627.0
+offset_top = 979.0
+offset_right = 1770.0
+offset_bottom = 1024.0
+text = "Restart"
+script = ExtResource("4_jromk")
 
-[node name="Music" parent="." unique_id=1886973568 instance=ExtResource("5_q8a8k")]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

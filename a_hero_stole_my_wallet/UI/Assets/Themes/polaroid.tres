@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://cnwpo35j36tgu"]
 
-[ext_resource type="FontFile" uid="uid://c1iit16efiep1" path="res://ui/Assets/Misc/JakobsHandwriting-Azep.ttf" id="1_8w8ts"]
+[ext_resource type="FontFile" uid="uid://c1iit16efiep1" path="res://UI/Assets/Misc/JakobsHandwriting-Azep.ttf" id="1_8w8ts"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5f3le"]
 bg_color = Color(1, 1, 1, 1)

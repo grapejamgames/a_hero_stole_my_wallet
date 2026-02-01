@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://b35gp4wrpymqh"]
+
+[ext_resource type="Script" uid="uid://bdlcsmma5n0dk" path="res://audio/script_music_control.gd" id="1_dsv8s"]
+
+[node name="MusicControl" type="ColorRect" unique_id=394259861]
+offset_right = 145.0
+offset_bottom = 49.0
+color = Color(0.78431374, 0.78431374, 0.78431374, 0.5254902)
+script = ExtResource("1_dsv8s")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1244603445]
+layout_mode = 0
+offset_right = 68.0
+offset_bottom = 31.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1255976928]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1761583814]
+layout_mode = 2
+text = "Music"
+
+[node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer/HBoxContainer" unique_id=2142820306]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="MarginContainer/HBoxContainer" unique_id=1918777052]
+layout_mode = 2
+selected = 1
+allow_reselect = true
+item_count = 3
+popup/item_0/text = "High"
+popup/item_0/id = 0
+popup/item_1/text = "Low"
+popup/item_1/id = 1
+popup/item_2/text = "Off"
+popup/item_2/id = 2
+
+[connection signal="item_selected" from="MarginContainer/HBoxContainer/OptionButton" to="." method="_on_option_button_item_selected"]

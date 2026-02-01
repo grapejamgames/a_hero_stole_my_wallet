@@ -6,12 +6,8 @@ signal hero_chosen
 @onready var congrats_container: PanelContainer = $Congrats
 @onready var sure_label: Label = $Sure/VBoxContainer/Sure
 @onready var fail_container: PanelContainer = $Fail
+@onready var main = get_node_or_null("/root/Main")
 var correct_answer : bool
-
-
-func _on_examine_polaroid_endgame(name: String) -> void:
-	sure_label.text = "Are you sure you want to unmask " + name + " as the culprit?"
-	show()
 
 
 func _on_yes_pressed() -> void:
@@ -25,3 +21,12 @@ func _on_yes_pressed() -> void:
 
 func _on_no_pressed() -> void:
 	hide()
+
+
+func _on_examine_screen_endgame_check() -> void:
+	print("main")
+	var chosen_hero : String
+	if main:
+		chosen_hero = main.chosen_hero
+	sure_label.text = "Are you sure you want to unmask " + chosen_hero + " as the culprit?"
+	show()

@@ -23,6 +23,7 @@ config/main_scene=""
 [autoload]
 
 Adlibs="*res://autoload/autoload_adlibs.gd"
+Music="*uid://cf713qnsyypuf"
 
 [display]
 

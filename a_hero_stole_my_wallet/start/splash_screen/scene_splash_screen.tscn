@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bhmvlos3ng7x5"]
 
-[ext_resource type="StyleBox" uid="uid://yv5fui7ic66m" path="res://ui/Assets/Themes/button_hover.tres" id="1_xgula"]
-[ext_resource type="StyleBox" uid="uid://dcmdpfbk6ohyl" path="res://ui/Assets/Themes/button_normal.tres" id="2_yuwp0"]
-[ext_resource type="StyleBox" uid="uid://di7tf7032vcgu" path="res://ui/Assets/Themes/button_press.tres" id="3_pjlmy"]
-[ext_resource type="FontFile" uid="uid://d3csvtcpgpg2j" path="res://ui/Assets/Misc/ShantellSans-Regular.ttf" id="4_nhi6b"]
+[ext_resource type="StyleBox" uid="uid://yv5fui7ic66m" path="res://UI/Assets/Themes/button_hover.tres" id="1_xgula"]
+[ext_resource type="StyleBox" uid="uid://dcmdpfbk6ohyl" path="res://UI/Assets/Themes/button_normal.tres" id="2_yuwp0"]
+[ext_resource type="StyleBox" uid="uid://di7tf7032vcgu" path="res://UI/Assets/Themes/button_press.tres" id="3_pjlmy"]
+[ext_resource type="FontFile" uid="uid://d3csvtcpgpg2j" path="res://UI/Assets/Misc/ShantellSans-Regular.ttf" id="4_nhi6b"]
 [ext_resource type="Texture2D" uid="uid://bi7kn70xcgvl5" path="res://start/splash_screen/logo.png" id="5_ik2ud"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6gcq"]
