@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbsifi6231b2i"
-path="res://.godot/imported/bear_headshot.jpg-f1d26a54cf1294f318af14470d430f23.ctex"
+path="res://.godot/imported/bear_headshot.jpg-e9d57e21a0063d384ac55e0902c72641.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/assets/Art/bear_headshot.jpg"
-dest_files=["res://.godot/imported/bear_headshot.jpg-f1d26a54cf1294f318af14470d430f23.ctex"]
+source_file="res://ui/Assets/Art/bear_headshot.jpg"
+dest_files=["res://.godot/imported/bear_headshot.jpg-e9d57e21a0063d384ac55e0902c72641.ctex"]
 
 [params]
 

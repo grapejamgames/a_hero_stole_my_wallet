@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c62ps56pjggts"
-path="res://.godot/imported/Cork_rgtmrnp0_1K_BaseColor.jpg-e787842d7d1248c39b3dad28b6e283ad.ctex"
+path="res://.godot/imported/Cork_rgtmrnp0_1K_BaseColor.jpg-12cda07b5eb953581407f0f27979117a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/assets/Art/Materials/Cork_rgtmrnp0_1K_BaseColor.jpg"
-dest_files=["res://.godot/imported/Cork_rgtmrnp0_1K_BaseColor.jpg-e787842d7d1248c39b3dad28b6e283ad.ctex"]
+source_file="res://ui/Assets/Art/Materials/Cork_rgtmrnp0_1K_BaseColor.jpg"
+dest_files=["res://.godot/imported/Cork_rgtmrnp0_1K_BaseColor.jpg-12cda07b5eb953581407f0f27979117a.ctex"]
 
 [params]
 

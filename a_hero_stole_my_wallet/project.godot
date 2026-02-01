@@ -15,14 +15,14 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="A Hero Stole My Wallet"
-run/main_scene="uid://btoc5cwe24jv1"
+run/main_scene="uid://364m232n0qjy"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 config/main_scene=""
 
 [autoload]
 
-Adlibs="*res://autoload_adlibs.gd"
+Adlibs="*res://autoload/autoload_adlibs.gd"
 
 [display]
 

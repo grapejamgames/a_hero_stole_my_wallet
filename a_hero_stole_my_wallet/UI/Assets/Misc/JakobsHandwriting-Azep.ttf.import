@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c1iit16efiep1"
-path="res://.godot/imported/JakobsHandwriting-Azep.ttf-72a84978fee6c452a849b7cf78d56e59.fontdata"
+path="res://.godot/imported/JakobsHandwriting-Azep.ttf-c5fe4ad0637d1cd37abc4bdb65766c17.fontdata"
 
 [deps]
 
-source_file="res://ui/assets/Misc/JakobsHandwriting-Azep.ttf"
-dest_files=["res://.godot/imported/JakobsHandwriting-Azep.ttf-72a84978fee6c452a849b7cf78d56e59.fontdata"]
+source_file="res://ui/Assets/Misc/JakobsHandwriting-Azep.ttf"
+dest_files=["res://.godot/imported/JakobsHandwriting-Azep.ttf-c5fe4ad0637d1cd37abc4bdb65766c17.fontdata"]
 
 [params]
 

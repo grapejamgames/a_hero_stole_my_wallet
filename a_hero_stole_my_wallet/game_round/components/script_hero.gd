@@ -130,7 +130,7 @@ func get_resource() -> HeroDescription:
 
 
 func set_resource() -> void:
-	var resource_path = "res://UI/HeroDescriptions/"
+	var resource_path = "res://game_round/Resources/"
 	var lower_name = name.to_lower()
 	var hero_resource_path = "{folder}{name}_description.tres"
 	_resource = load(hero_resource_path.format({
