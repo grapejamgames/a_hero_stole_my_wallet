@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5b1vwnuporwn"
-path="res://.godot/imported/margot_headshot.jpg-6b655105279a8b9673c3a52870db5955.ctex"
+path="res://.godot/imported/margot_headshot.jpg-5c249cdf8d0a3c9d5f2cfb379e56a85e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/Assets/Art/margot_headshot.jpg"
-dest_files=["res://.godot/imported/margot_headshot.jpg-6b655105279a8b9673c3a52870db5955.ctex"]
+source_file="res://UI/Assets/Art/margot_headshot.jpg"
+dest_files=["res://.godot/imported/margot_headshot.jpg-5c249cdf8d0a3c9d5f2cfb379e56a85e.ctex"]
 
 [params]
 

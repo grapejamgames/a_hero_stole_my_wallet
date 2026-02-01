@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3m8eidnamjh3"
-path="res://.godot/imported/claire.jpg-ef1aac7db1f034fefa330e2090f4e983.ctex"
+path="res://.godot/imported/claire.jpg-6c274dfb6adbab6f5288b12e6fc6d1b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/Assets/Art/claire.jpg"
-dest_files=["res://.godot/imported/claire.jpg-ef1aac7db1f034fefa330e2090f4e983.ctex"]
+source_file="res://UI/Assets/Art/claire.jpg"
+dest_files=["res://.godot/imported/claire.jpg-6c274dfb6adbab6f5288b12e6fc6d1b1.ctex"]
 
 [params]
 

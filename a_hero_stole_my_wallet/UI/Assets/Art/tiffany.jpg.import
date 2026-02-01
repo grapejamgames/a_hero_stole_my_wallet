@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7243nrm7bl7p"
-path="res://.godot/imported/tiffany.jpg-90e059328f62a52545b05a51da4af648.ctex"
+path="res://.godot/imported/tiffany.jpg-d985a55b269640f9cea764159b75409f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/Assets/Art/tiffany.jpg"
-dest_files=["res://.godot/imported/tiffany.jpg-90e059328f62a52545b05a51da4af648.ctex"]
+source_file="res://UI/Assets/Art/tiffany.jpg"
+dest_files=["res://.godot/imported/tiffany.jpg-d985a55b269640f9cea764159b75409f.ctex"]
 
 [params]
 

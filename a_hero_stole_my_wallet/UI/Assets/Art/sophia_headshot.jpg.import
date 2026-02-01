@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df8fxmtem852g"
-path="res://.godot/imported/sophia_headshot.jpg-4954d5e22087c1593b4cf025defbf157.ctex"
+path="res://.godot/imported/sophia_headshot.jpg-31d3a2bfea1f04a4ab25eb2bce7ae9e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/Assets/Art/sophia_headshot.jpg"
-dest_files=["res://.godot/imported/sophia_headshot.jpg-4954d5e22087c1593b4cf025defbf157.ctex"]
+source_file="res://UI/Assets/Art/sophia_headshot.jpg"
+dest_files=["res://.godot/imported/sophia_headshot.jpg-31d3a2bfea1f04a4ab25eb2bce7ae9e0.ctex"]
 
 [params]
 

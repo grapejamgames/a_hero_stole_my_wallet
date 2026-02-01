@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cykvcotb2n8hn"
-path="res://.godot/imported/chad.jpg-0a41a5155ffb16fa045bb6c96241d329.ctex"
+path="res://.godot/imported/chad.jpg-607a84cef9a30cd7a6e9d4631d3c6835.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/Assets/Art/chad.jpg"
-dest_files=["res://.godot/imported/chad.jpg-0a41a5155ffb16fa045bb6c96241d329.ctex"]
+source_file="res://UI/Assets/Art/chad.jpg"
+dest_files=["res://.godot/imported/chad.jpg-607a84cef9a30cd7a6e9d4631d3c6835.ctex"]
 
 [params]
 

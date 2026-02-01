@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cfclswjtxnbxo"
-path="res://.godot/imported/COMICBD.TTF-6ab49269edb6649b251c95fc2146115a.fontdata"
+path="res://.godot/imported/COMICBD.TTF-a55b32bdcfe6717b4fae8c085c98c1c3.fontdata"
 
 [deps]
 
-source_file="res://ui/Assets/Misc/COMICBD.TTF"
-dest_files=["res://.godot/imported/COMICBD.TTF-6ab49269edb6649b251c95fc2146115a.fontdata"]
+source_file="res://UI/Assets/Misc/COMICBD.TTF"
+dest_files=["res://.godot/imported/COMICBD.TTF-a55b32bdcfe6717b4fae8c085c98c1c3.fontdata"]
 
 [params]
 

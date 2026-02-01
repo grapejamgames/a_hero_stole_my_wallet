@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c005s7cp5kmxy"
-path="res://.godot/imported/ShantellSans-Bold.ttf-abeb3a8b46aced7d31d9f7079a019d6c.fontdata"
+path="res://.godot/imported/ShantellSans-Bold.ttf-950f8f8d0b1c6a034063cb4b134183aa.fontdata"
 
 [deps]
 
-source_file="res://ui/Assets/Misc/ShantellSans-Bold.ttf"
-dest_files=["res://.godot/imported/ShantellSans-Bold.ttf-abeb3a8b46aced7d31d9f7079a019d6c.fontdata"]
+source_file="res://UI/Assets/Misc/ShantellSans-Bold.ttf"
+dest_files=["res://.godot/imported/ShantellSans-Bold.ttf-950f8f8d0b1c6a034063cb4b134183aa.fontdata"]
 
 [params]
 

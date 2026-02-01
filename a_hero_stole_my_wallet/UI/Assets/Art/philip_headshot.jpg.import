@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cco7opeon2m5v"
-path="res://.godot/imported/philip_headshot.jpg-2ab04101fe28ec3eaebd29b5e16d721d.ctex"
+path="res://.godot/imported/philip_headshot.jpg-3ebcd4528b7fb3487cd3da3f2b8a64a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/Assets/Art/philip_headshot.jpg"
-dest_files=["res://.godot/imported/philip_headshot.jpg-2ab04101fe28ec3eaebd29b5e16d721d.ctex"]
+source_file="res://UI/Assets/Art/philip_headshot.jpg"
+dest_files=["res://.godot/imported/philip_headshot.jpg-3ebcd4528b7fb3487cd3da3f2b8a64a7.ctex"]
 
 [params]
 
