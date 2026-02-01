@@ -146,9 +146,6 @@ bbcode_enabled = true
 text = "Original music by [url=https://open.spotify.com/artist/4JXpfcp9DAWADf5JQlMf6A?si=njv26lwVSuqD7YjHlpOVag]Jason Draper[/url]"
 fit_content = true
 
-[node name="HSeparator3" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=368771690]
-layout_mode = 2
-
 [node name="RichTextLabel" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1899040022]
 layout_mode = 2
 text = "Special thanks to Jon Bear for original gameplay concept"
@@ -174,9 +171,6 @@ bbcode_enabled = true
 text = "Mouse Click by [url=https://pixabay.com/users/universfield-28281460/]Universfield[/url] on [url=https://pixabay.com/]pixapay[/url]"
 fit_content = true
 
-[node name="HSeparator4" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=753312015]
-layout_mode = 2
-
 [node name="RichTextLabel5" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=438703035]
 layout_mode = 2
 bbcode_enabled = true
@@ -188,9 +182,6 @@ layout_mode = 2
 bbcode_enabled = true
 text = "Pop art comic zooming lines expression background by [url=https://www.freepik.com/author/muhammad-abdullah]Muhammad.Abdullah[/url] on [url=https://www.freepik.com/]Freepik[/url]"
 fit_content = true
-
-[node name="HSeparator6" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1053103194]
-layout_mode = 2
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1851863250]
 layout_mode = 2
@@ -209,6 +200,15 @@ layout_mode = 2
 bbcode_enabled = true
 text = "Jail Door Image by [url=https://www.freepik.com/free-vector/prisoner-jail-bar-door-with-lock-design_136141846.htm]starline on Freepik[/url]"
 fit_content = true
+
+[node name="RichTextLabel30" type="RichTextLabel" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1003695899]
+layout_mode = 2
+bbcode_enabled = true
+text = "Door sound by [url=https://pixabay.com/users/audiopapkin-14728698/]AudioPapkin[/url] on [url=https://pixabay.com/]pixapay[/url]"
+fit_content = true
+
+[node name="HSeparator10" type="HSeparator" parent="Panel/CreditsScreen/VBoxContainer" unique_id=740454320]
+layout_mode = 2
 
 [node name="Back" type="Button" parent="Panel/CreditsScreen/VBoxContainer" unique_id=1283217523]
 layout_mode = 2
@@ -241,13 +241,13 @@ stream = ExtResource("4_y8e7h")
 [connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="Panel/MenuScreen" method="_on_back_pressed"]
 [connection signal="pressed" from="Panel/InstructionsScreen/VBoxContainer/Back" to="Panel/InstructionsScreen" method="_on_back_pressed"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel10" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel3" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
+[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel9" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel2" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel4" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
-[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel10" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel5" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel6" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
-[connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel9" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel7" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="Panel/CreditsScreen/VBoxContainer/RichTextLabel8" to="Panel/CreditsScreen" method="_on_rich_text_label_meta_clicked"]
 [connection signal="pressed" from="Panel/CreditsScreen/VBoxContainer/Back" to="." method="_on_back_pressed"]
