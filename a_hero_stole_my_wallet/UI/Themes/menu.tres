@@ -5,6 +5,8 @@
 [ext_resource type="StyleBox" uid="uid://dcmdpfbk6ohyl" path="res://UI/Themes/button_normal.tres" id="2_pe1de"]
 [ext_resource type="StyleBox" uid="uid://di7tf7032vcgu" path="res://UI/Themes/button_press.tres" id="3_rmbb5"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rmbb5"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6gcq"]
 bg_color = Color(1, 0.5370987, 0, 1)
 
@@ -18,6 +20,7 @@ Button/font_sizes/font_size = 32
 Button/styles/hover = ExtResource("1_maob3")
 Button/styles/normal = ExtResource("2_pe1de")
 Button/styles/pressed = ExtResource("3_rmbb5")
+HSeparator/constants/separation = 16
+HSeparator/styles/separator = SubResource("StyleBoxEmpty_rmbb5")
 Label/fonts/font = ExtResource("2_maob3")
-MarginContainer/constants/margin_top = 16
 Panel/styles/panel = SubResource("StyleBoxFlat_e6gcq")
